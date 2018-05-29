@@ -1,0 +1,9 @@
+{
+  "extends": [
+    "opencollective",
+    "plugin:import/recommended",
+  ],
+  "rules": {
+    "no-console": 0,
+  }
+}
