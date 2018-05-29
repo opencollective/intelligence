@@ -1,0 +1,48 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "website"
+  ],
+  "homepage": "https://warrior.js.org",
+  "repository": "https://github.com/olistic/warriorjs",
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "release": "yarn clean:build && yarn build && yarn test && lerna publish",
+    "build": "lerna run build --stream --ignore warriorjs-website",
+    "clean": "yarn clean:build & yarn clean:coverage & yarn clean:modules",
+    "clean:build": "rm -rf packages/*/lib",
+    "clean:coverage": "rm -rf coverage",
+    "clean:modules": "lerna clean --yes",
+    "lint": "eslint --cache packages/**/src",
+    "lint:fix": "yarn lint --fix",
+    "precommit": "lint-staged",
+    "pretest": "yarn lint",
+    "test": "jest",
+    "test:coverage": "yarn test --coverage",
+    "test:watch": "yarn test --watch"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-react": "^7.8.2",
+    "husky": "^0.14.3",
+    "jest": "^23.0.0",
+    "lerna": "^2.11.0",
+    "lint-staged": "^7.1.2",
+    "prettier": "1.12.1"
+  },
+  "lint-staged": {
+    "*.{js,json,css,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}

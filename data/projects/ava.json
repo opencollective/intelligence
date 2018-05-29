@@ -1,0 +1,15 @@
+{
+  "name": "ava",
+  "packages": [
+    {
+      "name": "ava",
+      "devDependencies": 13,
+      "score": 13
+    }
+  ],
+  "opencollective": {
+    "id": 180,
+    "name": "AVA",
+    "slug": "ava"
+  }
+}

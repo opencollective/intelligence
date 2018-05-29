@@ -1,0 +1,12 @@
+{
+  "name": "semver",
+  "slug": "semver",
+  "packages": [
+    {
+      "name": "semver",
+      "dependencies": 23,
+      "devDependencies": 6,
+      "score": 75
+    }
+  ]
+}

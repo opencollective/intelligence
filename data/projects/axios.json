@@ -1,0 +1,11 @@
+{
+  "name": "axios",
+  "packages": [
+    {
+      "name": "axios",
+      "dependencies": 16,
+      "devDependencies": 4,
+      "score": 20
+    }
+  ]
+}

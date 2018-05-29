@@ -1,0 +1,11 @@
+{
+  "name": "lerna",
+  "packages": [
+    {
+      "name": "lerna",
+      "devDependencies": 31,
+      "dependencies": 1,
+      "score": 32
+    }
+  ]
+}

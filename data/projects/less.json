@@ -1,0 +1,11 @@
+{
+  "name": "less",
+  "packages": [
+    {
+      "name": "less",
+      "devDependencies": 12,
+      "dependencies": 4,
+      "score": 16
+    }
+  ]
+}

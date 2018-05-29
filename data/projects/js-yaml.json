@@ -1,0 +1,13 @@
+{
+  "name": "js-yaml",
+  "slug": "js-yaml",
+  "packages": [
+    {
+      "name": "js-yaml",
+      "dependencies": 12,
+      "peerDependencies": 1,
+      "devDependencies": 1,
+      "score": 38
+    }
+  ]
+}

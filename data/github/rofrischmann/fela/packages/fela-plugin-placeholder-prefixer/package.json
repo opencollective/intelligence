@@ -1,0 +1,29 @@
+{
+  "name": "fela-plugin-placeholder-prefixer",
+  "version": "5.0.19",
+  "description": "Fela plugin to add ::placeholder prefxies",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "jsnext:main": "es/index.js",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "lib/**",
+    "es/**"
+  ],
+  "repository": "https://github.com/rofrischmann/fela/",
+  "keywords": [
+    "fela",
+    "fela-plugin",
+    "vendor prefixing",
+    "prefixer",
+    "autoprefixer",
+    "cssinjs"
+  ],
+  "author": "Robin Frischmann",
+  "license": "MIT",
+  "dependencies": {
+    "fast-loops": "^1.0.0",
+    "fela-plugin-custom-property": "^7.0.3"
+  }
+}

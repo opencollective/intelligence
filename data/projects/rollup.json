@@ -1,0 +1,45 @@
+{
+  "name": "rollup",
+  "packages": [
+    {
+      "name": "rollup",
+      "devDependencies": 41,
+      "score": 41
+    },
+    {
+      "name": "rollup-plugin-babel",
+      "devDependencies": 27,
+      "score": 27
+    },
+    {
+      "name": "rollup-plugin-node-resolve",
+      "devDependencies": 27,
+      "score": 27
+    },
+    {
+      "name": "rollup-plugin-commonjs",
+      "devDependencies": 21,
+      "score": 21
+    },
+    {
+      "name": "rollup-plugin-replace",
+      "devDependencies": 16,
+      "score": 16
+    },
+    {
+      "name": "rollup-plugin-uglify",
+      "devDependencies": 16,
+      "score": 16
+    },
+    {
+      "name": "rollup-plugin-json",
+      "devDependencies": 10,
+      "score": 10
+    }
+  ],
+  "opencollective": {
+    "id": 11743,
+    "name": "Rollup",
+    "slug": "rollup"
+  }
+}

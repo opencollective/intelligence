@@ -1,0 +1,82 @@
+<p align="center">
+  <a href="http://streetmix.net/">
+    <img alt="Streetmix" src="https://streetmix.github.io/assets/logos/streetmix-logo.svg" width="450">
+  </a>
+</p>
+
+<p align="center">
+  <b>Streetmix is a collaborative process for communities and city planners to improve public spaces.</b> 
+  <br>Design, remix, and share your neighborhood street at <a href="http://streetmix.net/">streetmix.net</a>.
+</p>
+
+<p align="center">
+  :couple: :palm_tree: :oncoming_automobile: :oncoming_bus: :palm_tree: :dancer:
+</p>
+
+<p align="center">
+  <b>Have questions? Looking for support or advice?</b>
+  <br><a href="http://forums.streetmix.net/">Check out our forums</a> or <a href="https://streetmix-slack.herokuapp.com/">join our Slack chat!</a>
+</p>
+
+<p align="center">
+  Learn more about the team and project collaborators at <a href="https://opencollective.com/streetmix">Open Collective</a>.
+  <br>We welcome contributions! Please see our <a href="https://github.com/streetmix/streetmix/blob/master/CONTRIBUTING.md">contributor guidelines</a>.
+</p>
+
+<p align="center">
+  <a href="https://travis-ci.org/streetmix/streetmix"><img alt="Build Status" src="https://img.shields.io/travis/streetmix/streetmix/master.svg?style=flat-square"></a>
+  <a href="https://david-dm.org/streetmix/streetmix"><img alt="Dependency Status" src="https://img.shields.io/david/streetmix/streetmix.svg?style=flat-square"></a>
+  <a href="https://codeclimate.com/github/codeforamerica/streetmix"><img alt="Code Climate" src="https://img.shields.io/codeclimate/github/codeforamerica/streetmix.svg?style=flat-square"></a>
+</p>
+
+<hr>
+
+<p align="center">
+  <img src="https://github.com/streetmix/streetmix/raw/master/doc/images/screenshot-beta.jpg" alt="screenshot">
+</p>
+
+## About
+
+#### What are street sections?
+
+A "section" is shortened way of saying "cross-section view", a type of 2D non-perspectival drawing commonly used in engineering and architecture to show what something looks like when you take a slice of it and look at it head-on. Similarly, a street section is a cross section view of a street, showing the widths and placement of vehicle lanes, bike lanes, sidewalks, trees, street furniture or accessories (like benches or street lamps), as well as engineering information like how the road is sloped to facilitate drainage, or the locations of underground utilities. Although sections can be simplified line drawings, urban designers and landscape architects have created very colorful illustrative street sections, removing most of the engineering particulars to communicate how a street could be designed to feel safe, walkable or habitable.
+
+![example-sections](doc/images/thumb_sections.png "Left to Right: (1) Existing conditions section of Market Street, from the Better Market Street Plan, San Francisco (2) Proposed one-way cycletrack design of Second Street, from the Great Second Street Plan, San Francisco (3)Example of an illustrative section, courtesy of Lou Huang")
+
+#### Why does Streetmix exist?
+
+When city planners seek input from community meetings from the public on streetscape improvements, one common engagement activity is to create paper cut-outs depicting different street components (like bike lanes, sidewalks, trees, and so on) and allow attendees to reassemble them into their desired streetscape. Planners and city officials can then take this feedback to determine a course of action for future plans. By creating an web-based version of this activity, planners can reach a wider audience than they could at meetings alone, and allow community members to share and remix each other's creations.
+
+The goal is to promote two-way communication between planners and the public, as well. Streetmix intends to communicate not just feedback to planners but also information and consequences of actions to the users that are creating streets. Kind of like SimCity did with its in-game advisors!
+
+Streetmix can be used as a tool to promote and engage citizens around streetscape and placemaking issues, such as [Complete Streets][completestreets] or the Project for Public Spaces' [Rightsizing Streets Guide][rightsizing].
+
+[completestreets]: http://www.smartgrowthamerica.org/complete-streets/complete-streets-fundamentals
+[rightsizing]: http://www.pps.org/reference/rightsizing/
+
+#### Why the name "Streetmix"?
+
+"Streets" + "remix" :-)
+
+#### How did this project start?
+
+Streetmix started as a [Code for America][cfa] hackathon project in January 2013, inspired by community meetings like the one described above.
+
+[cfa]: https://codeforamerica.org/
+
+#### How do I install / set up Streetmix myself?
+
+Streetmix is a [Node.js](https://nodejs.org/) based project. Set up your own by [following these instructions](https://github.com/streetmix/streetmix/blob/master/CONTRIBUTING.md#development-setup)!
+
+## Sponsors
+
+<p align="center">
+  <a href="https://opencollective.com/streetmix"><img src="https://opencollective.com/streetmix/sponsors.svg" alt="Become a sponsor"></a>
+</p>
+
+
+### Copyright
+
+Copyright (c) 2013-2017 Code for America and contributors. See [LICENSE][] for details.
+
+[license]: https://github.com/streetmix/streetmix/blob/master/LICENSE.md

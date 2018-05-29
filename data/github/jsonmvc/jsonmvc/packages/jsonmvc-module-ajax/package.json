@@ -1,0 +1,29 @@
+{
+  "name": "jsonmvc-module-ajax",
+  "description": "JSONMVC AJAX Module",
+  "version": "0.3.6",
+  "main": "dist/jsonmvc-module-ajax.js",
+  "browser": "dist/jsonmvc-module-ajax.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jsonmvc/jsonmvc.git"
+  },
+  "keywords": [
+    "jsonmvc",
+    "ajax",
+    "request",
+    "mostjs",
+    "development"
+  ],
+  "author": "Constantin Dumitrescu <dum.constantin@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jsonmvc/jsonmvc/issues"
+  },
+  "homepage": "https://github.com/jsonmvc/jsonmvc/packages/jsonmvc-module-ajax#readme",
+  "dependencies": {
+    "@fdaciuk/ajax": "^2.3.0",
+    "jsonmvc-helper-observer": "^0.3.6",
+    "jsonmvc-helper-stream": "^0.3.6"
+  }
+}

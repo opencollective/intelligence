@@ -1,0 +1,13 @@
+{
+  "name": "gulp-uglify",
+  "slug": "gulp-uglify",
+  "ignored": true,
+  "packages": [
+    {
+      "name": "gulp-uglify",
+      "devDependencies": 18,
+      "dependencies": 3,
+      "score": 27
+    }
+  ]
+}

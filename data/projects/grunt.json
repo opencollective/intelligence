@@ -1,0 +1,47 @@
+{
+  "name": "grunt",
+  "packages": [
+    {
+      "name": "grunt",
+      "devDependencies": 23,
+      "dependencies": 4,
+      "score": 27
+    },
+    {
+      "name": "grunt-contrib-uglify",
+      "devDependencies": 13,
+      "dependencies": 3,
+      "score": 16
+    },
+    {
+      "name": "grunt-contrib-watch",
+      "devDependencies": 13,
+      "dependencies": 2,
+      "score": 15
+    },
+    {
+      "name": "grunt-cli",
+      "devDependencies": 12,
+      "dependencies": 1,
+      "score": 13
+    },
+    {
+      "name": "grunt-contrib-copy",
+      "devDependencies": 9,
+      "dependencies": 2,
+      "score": 11
+    },
+    {
+      "name": "grunt-contrib-concat",
+      "devDependencies": 9,
+      "dependencies": 1,
+      "score": 10
+    },
+    {
+      "name": "grunt-contrib-clean",
+      "devDependencies": 8,
+      "dependencies": 2,
+      "score": 10
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "request",
+  "slug": "request",
+  "packages": [
+    {
+      "name": "request",
+      "dependencies": 30,
+      "devDependencies": 9,
+      "score": 99
+    }
+  ]
+}

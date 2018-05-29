@@ -1,0 +1,10 @@
+{
+  "name": "winston",
+  "packages": [
+    {
+      "name": "winston",
+      "dependencies": 14,
+      "score": 14
+    }
+  ]
+}

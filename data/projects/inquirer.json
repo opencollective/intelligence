@@ -1,0 +1,12 @@
+{
+  "name": "inquirer",
+  "slug": "inquirer",
+  "packages": [
+    {
+      "name": "inquirer",
+      "devDependencies": 4,
+      "dependencies": 5,
+      "score": 19
+    }
+  ]
+}

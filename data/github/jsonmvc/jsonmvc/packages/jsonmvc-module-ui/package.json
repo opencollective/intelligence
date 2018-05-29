@@ -1,0 +1,30 @@
+{
+  "name": "jsonmvc-module-ui",
+  "description": "A JSONMVC module for app ui management",
+  "version": "0.3.27",
+  "main": "dist/jsonmvc-module-ui.js",
+  "browser": "dist/jsonmvc-module-ui.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jsonmvc/jsonmvc.git"
+  },
+  "keywords": [
+    "jsonmvc",
+    "ui",
+    "view",
+    "interface",
+    "events",
+    "development"
+  ],
+  "author": "Constantin Dumitrescu <dum.constantin@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jsonmvc/jsonmvc/issues"
+  },
+  "homepage": "https://github.com/jsonmvc/jsonmvc/packages/jsonmvc-module-ui#readme",
+  "dependencies": {
+    "jsonmvc-helper-stream": "^0.3.6",
+    "lodash-es": "^4.17.4",
+    "most": "^1.6.1"
+  }
+}

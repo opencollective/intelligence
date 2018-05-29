@@ -1,0 +1,12 @@
+{
+  "name": "chokidar",
+  "slug": "chokidar",
+  "packages": [
+    {
+      "name": "chokidar",
+      "dependencies": 8,
+      "devDependencies": 6,
+      "score": 30
+    }
+  ]
+}

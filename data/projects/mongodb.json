@@ -1,0 +1,12 @@
+{
+  "name": "mongodb",
+  "slug": "mongodb",
+  "packages": [
+    {
+      "name": "mongodb",
+      "dependencies": 8,
+      "devDependencies": 1,
+      "score": 25
+    }
+  ]
+}

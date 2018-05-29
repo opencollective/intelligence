@@ -1,0 +1,23 @@
+{
+  "name": "lem",
+  "version": "1.2.0",
+  "description": "lem frontend",
+  "main": "lem-frontend-electron/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preinstall": "ros install cxxxr/lem"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "electron": "^1.7.9",
+    "keyboard-layout": "^2.0.13",
+    "marked": "^0.3.6",
+    "utf-8": "^1.0.0",
+    "vscode-jsonrpc": "^3.4.1"
+  },
+  "bin": {
+    "lem-electron": "lem-frontend-electron/cli.js"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "eslint-plugin-promise",
+  "slug": "eslint-plugin-promise",
+  "packages": [
+    {
+      "name": "eslint-plugin-promise",
+      "devDependencies": 23,
+      "score": 23
+    }
+  ]
+}

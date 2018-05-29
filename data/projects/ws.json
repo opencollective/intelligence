@@ -1,0 +1,11 @@
+{
+  "name": "ws",
+  "packages": [
+    {
+      "name": "ws",
+      "dependencies": 9,
+      "devDependencies": 3,
+      "score": 12
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "name": "babel",
+  "packages": [
+    {
+      "name": "babel-eslint",
+      "devDependencies": 83,
+      "dependencies": 1,
+      "score": 84
+    },
+    {
+      "name": "babel-core",
+      "devDependencies": 86,
+      "dependencies": 6,
+      "score": 92
+    },
+    {
+      "name": "babel-loader",
+      "devDependencies": 73,
+      "dependencies": 4,
+      "score": 77
+    },
+    {
+      "name": "babel-preset-es2015",
+      "devDependencies": 64,
+      "score": 64
+    },
+    {
+      "name": "babel-cli",
+      "devDependencies": 61,
+      "dependencies": 2,
+      "score": 63
+    },
+    {
+      "name": "babel-preset-env",
+      "devDependencies": 54,
+      "dependencies": 6,
+      "score": 60
+    },
+    {
+      "name": "babel-preset-react",
+      "devDependencies": 50,
+      "dependencies": 6,
+      "score": 56
+    },
+    {
+      "name": "babel-register",
+      "devDependencies": 27,
+      "dependencies": 1,
+      "score": 28
+    },
+    {
+      "name": "babel-plugin-transform-object-rest-spread",
+      "devDependencies": 25,
+      "dependencies": 3,
+      "score": 28
+    },
+    {
+      "name": "babel-plugin-transform-runtime",
+      "devDependencies": 24,
+      "dependencies": 1,
+      "score": 25
+    },
+    {
+      "name": "babel-plugin-transform-class-properties",
+      "devDependencies": 20,
+      "dependencies": 5,
+      "score": 25
+    },
+    {
+      "name": "babel-preset-stage-0",
+      "devDependencies": 25,
+      "score": 25
+    },
+    {
+      "name": "babel-polyfill",
+      "devDependencies": 17,
+      "dependencies": 8,
+      "score": 25
+    },
+    {
+      "name": "babel-preset-stage-2",
+      "devDependencies": 15,
+      "score": 15
+    },
+    {
+      "name": "babel-runtime",
+      "devDependencies": 8,
+      "dependencies": 6,
+      "peerDependencies": 1,
+      "score": 15
+    },
+    {
+      "name": "babel-plugin-transform-flow-strip-types",
+      "devDependencies": 14,
+      "dependencies": 1,
+      "score": 15
+    },
+    {
+      "name": "babel-plugin-external-helpers",
+      "devDependencies": 15,
+      "score": 15
+    },
+    {
+      "name": "eslint-plugin-babel",
+      "devDependencies": 13,
+      "score": 13
+    },
+    {
+      "name": "babel-plugin-transform-es2015-modules-commonjs",
+      "devDependencies": 10,
+      "dependencies": 2,
+      "score": 12
+    },
+    {
+      "name": "gulp-babel",
+      "devDependencies": 11,
+      "score": 11
+    },
+    {
+      "name": "@babel/core",
+      "devDependencies": 9,
+      "dependencies": 2,
+      "score": 11
+    },
+    {
+      "name": "babel-preset-stage-1",
+      "devDependencies": 10,
+      "score": 10
+    }
+  ],
+  "opencollective": {
+    "id": 580,
+    "name": "Babel",
+    "slug": "babel"
+  }
+}

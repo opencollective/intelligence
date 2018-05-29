@@ -1,0 +1,16 @@
+{
+  "name": "mongoose",
+  "packages": [
+    {
+      "name": "mongoose",
+      "dependencies": 11,
+      "devDependencies": 1,
+      "score": 12
+    }
+  ],
+  "opencollective": {
+    "id": 11885,
+    "name": "Mongoose.js",
+    "slug": "mongoose"
+  }
+}

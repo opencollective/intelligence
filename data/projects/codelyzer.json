@@ -1,0 +1,10 @@
+{
+  "name": "codelyzer",
+  "packages": [
+    {
+      "name": "codelyzer",
+      "devDependencies": 10,
+      "score": 10
+    }
+  ]
+}

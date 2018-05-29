@@ -1,0 +1,78 @@
+{
+  "name": "nightwatch",
+  "description": "Easy to use Node.js based End-to-End testing solution for browser based apps and websites, using the W3C WebDriver API.",
+  "version": "1.0.6",
+  "author": {
+    "name": "Andrei Rusu",
+    "email": "andrei@nightwatchjs.org"
+  },
+  "homepage": "http://nightwatchjs.org",
+  "main": "./lib/index.js",
+  "license": "MIT",
+  "bugs": "https://github.com/nightwatchjs/nightwatch/issues",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:nightwatchjs/nightwatch.git"
+  },
+  "dependencies": {
+    "assertion-error": "^1.1.0",
+    "chai-nightwatch": "~0.1.x",
+    "ejs": "^2.5.9",
+    "lodash.clone": "^3.0.3",
+    "lodash.defaultsdeep": "^4.6.0",
+    "lodash.merge": "^4.6.1",
+    "minimatch": "3.0.3",
+    "mkpath": "1.0.0",
+    "optimist": "^0.6.1",
+    "proxy-agent": "^3.0.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "coveralls": "^3.0.0",
+    "eslint": "^3.17.1",
+    "mock-spawn": "^0.2.1",
+    "mockery": "~1.4.0",
+    "nock": "^9.1.4",
+    "mocha": "^5.1.1",
+    "nyc": "^11.6.0"
+  },
+  "optionalDependencies": {
+    "mocha": "^5.1.1"
+  },
+  "bin": {
+    "nightwatch": "./bin/nightwatch"
+  },
+  "man": "",
+  "scripts": {
+    "eslint": "eslint lib test --quiet",
+    "mocha-coverage": "nyc --reporter=html mocha test/src/",
+    "test": "mocha test/src",
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
+  },
+  "eslintConfig": {
+    "extends": "eslint:recommended",
+    "env": {
+      "browser": false,
+      "node": true
+    },
+    "rules": {
+      "eqeqeq": "off",
+      "curly": [
+        "error",
+        "all"
+      ],
+      "quotes": [
+        "error",
+        "single"
+      ]
+    }
+  },
+  "files": [
+    "bin",
+    "examples",
+    "lib",
+    "README.md",
+    "LICENSE.md",
+    "index.js"
+  ]
+}

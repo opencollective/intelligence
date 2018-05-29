@@ -1,0 +1,11 @@
+{
+  "name": "jsdom",
+  "packages": [
+    {
+      "name": "jsdom",
+      "dependencies": 3,
+      "devDependencies": 23,
+      "score": 26
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "node-uuid",
+  "slug": "node-uuid",
+  "packages": [
+    {
+      "name": "uuid",
+      "dependencies": 19,
+      "devDependencies": 5,
+      "score": 62
+    }
+  ]
+}

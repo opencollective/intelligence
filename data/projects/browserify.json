@@ -1,0 +1,12 @@
+{
+  "name": "browserify",
+  "slug": "browserify",
+  "packages": [
+    {
+      "name": "browserify",
+      "devDependencies": 21,
+      "dependencies": 3,
+      "score": 30
+    }
+  ]
+}

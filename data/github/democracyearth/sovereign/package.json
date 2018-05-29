@@ -1,0 +1,147 @@
+{
+  "name": "Sovereign.app",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DemocracyEarth/sovereign.git"
+  },
+  "collective": {
+    "type": "opencollective",
+    "url": "https://opencollective.com/DemocracyEarth"
+  },
+  "scripts": {
+    "start": "meteor --settings=config/production/settings.json",
+    "pretest": "npm run lint --silent",
+    "test": "meteor test --settings=config/development/settings.json --once --driver-package dispatch:mocha-phantomjs",
+    "test-app": "meteor test --full-app --once --driver-package dispatch:mocha-phantomjs",
+    "test-watch": "meteor test --settings=config/development/settings.json --driver-package practicalmeteor:mocha --port 3100",
+    "test-watch:dev": "meteor --settings=config/development/settings.json test --driver-package practicalmeteor:mocha --port 3100",
+    "test-watch:prod": "meteor --settings=config/production/settings.json test --driver-package practicalmeteor:mocha --port 3100",
+    "test-app-watch": "meteor test --full-app --driver-package practicalmeteor:mocha --port 3100",
+    "test:features": "./node_modules/.bin/chimp config/testing/chimp.js --chai --ddp=http://localhost:3003",
+    "start:dev": "meteor --settings=config/development/settings.json",
+    "start:debug": "meteor debug --inspect-brk=5959 --settings=config/development/settings.json",
+    "start:features": "MONGO_URL=mongodb://localhost:27017/sovereign_test meteor --settings=config/development/settings.json --port 3003",
+    "lint": "eslint .",
+    "postinstall": "opencollective-postinstall || exit 0"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.0.0-beta.46",
+    "autoprefixer": "^6.4.1",
+    "babel-runtime": "^6.26.0",
+    "bcrypt": "^1.0.3",
+    "bcryptjs": "^2.4.0",
+    "bindings": "^1.2.1",
+    "blockstack": "^0.14.2",
+    "core-js": "^2.5.5",
+    "faker": "^3.0.1",
+    "hoek": "^5.0.3",
+    "json-schema-faker": "^0.3.7",
+    "jsontokens": "^0.7.6",
+    "lodash": "^4.17.10",
+    "nan": "^2.3.5",
+    "phantomjs-prebuilt": "^2.1.16",
+    "randomfill": "^1.0.4",
+    "react": "^15.6.2",
+    "react-addons-pure-render-mixin": "^15.6.2",
+    "react-dom": "^15.6.2",
+    "react-fastclick": "^3.0.2",
+    "slug": "^0.9.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.1.0",
+    "chai": "^4.1.2",
+    "chai-string": "^1.3.0",
+    "chimp": "^0.51.1",
+    "escape-string-regexp": "^1.0.5",
+    "eslint": "^3.7.0",
+    "eslint-config-airbnb": "^11.1.0",
+    "eslint-import-resolver-meteor": "^0.3.3",
+    "eslint-plugin-import": "^1.15.0",
+    "eslint-plugin-jsx-a11y": "^2.2.2",
+    "eslint-plugin-meteor": "^4.0.0",
+    "eslint-plugin-react": "^6.2.2",
+    "meteor-node-stubs": "^0.3.3",
+    "opencollective-postinstall": "^2.0.0",
+    "shell-source": "^1.1.0",
+    "shelljs": "^0.7.4",
+    "words-to-numbers": "^1.4.1",
+    "yamljs": "^0.3.0"
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "parserOptions": {
+      "allowImportExportEverywhere": true
+    },
+    "env": {
+      "browser": true,
+      "node": true,
+      "jasmine": true
+    },
+    "globals": {
+      "_": true
+    },
+    "plugins": [
+      "meteor"
+    ],
+    "extends": [
+      "airbnb",
+      "plugin:meteor/recommended"
+    ],
+    "rules": {
+      "import/no-extraneous-dependencies": 0,
+      "import/prefer-default-export": "off",
+      "no-underscore-dangle": "off",
+      "guard-for-in": "off",
+      "prefer-arrow-callback": "off",
+      "func-names": [
+        "error",
+        "never"
+      ],
+      "import/no-unresolved": [
+        "error",
+        {
+          "ignore": [
+            "^meteor/",
+            "^/"
+          ]
+        }
+      ],
+      "no-restricted-syntax": "off",
+      "max-len": [
+        "error",
+        {
+          "code": 300
+        }
+      ],
+      "arrow-body-style": [
+        "error",
+        "always"
+      ],
+      "object-shorthand": [
+        "error",
+        "always",
+        {
+          "avoidQuotes": false
+        }
+      ],
+      "meteor/no-session": "off",
+      "meteor/eventmap-params": [
+        "error",
+        {
+          "eventParamName": "event",
+          "templateInstanceParamName": "instance"
+        }
+      ],
+      "meteor/template-names": [
+        "off"
+      ]
+    },
+    "settings": {
+      "import/core-modules": [
+        "meteor/meteor"
+      ],
+      "import/resolver": "meteor"
+    }
+  }
+}

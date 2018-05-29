@@ -1,0 +1,44 @@
+{
+  "name": "typography-design-tools",
+  "version": "0.16.17",
+  "description": "Design tools for Typography.js",
+  "main": "./dist/index.js",
+  "keywords": [
+    "typography",
+    "devtools",
+    "designtools"
+  ],
+  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/KyleAMathews/typography.js",
+  "bugs": {
+    "url": "https://github.com/KyleAMathews/typography.js/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KyleAMathews/typography.js.git"
+  },
+  "dependencies": {
+    "aphrodite": "^0.5.0",
+    "gray-percentage": "^2.0.0",
+    "parse-unit": "^1.0.1",
+    "react": "^15.2.1",
+    "react-autosuggest": "^3.9.0",
+    "react-dom": "^15.2.1",
+    "react-number-editor": "^4.0.2",
+    "react-select": "^1.0.0-beta14",
+    "react-typography": "^0.16.13",
+    "typography": "^0.16.17"
+  },
+  "scripts": {
+    "build": "../../node_modules/.bin/babel src --out-dir dist/",
+    "flow": "../../node_modules/.bin/flow",
+    "lint": "../../node_modules/.bin/eslint --ext .js,.jsx --ignore-path .gitignore .",
+    "watch": "../../node_modules/.bin/babel -w src --out-dir dist/"
+  },
+  "devDependencies": {
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-react": "^6.11.1",
+    "request": "^2.74.0"
+  }
+}

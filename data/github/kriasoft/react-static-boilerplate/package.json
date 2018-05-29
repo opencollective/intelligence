@@ -1,0 +1,127 @@
+{
+  "name": "app",
+  "version": "0.0.0",
+  "private": true,
+  "main": "build/app.js",
+  "browserslist": {
+    "development": [
+      "last 2 chrome versions",
+      "last 2 firefox versions",
+      "last 2 edge versions"
+    ],
+    "production": [
+      ">1%",
+      "last 4 versions",
+      "Firefox ESR",
+      "not ie < 11"
+    ]
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.0.0-beta.49",
+    "@babel/runtime": "^7.0.0-beta.49",
+    "@firebase/app": "^0.3.3",
+    "@material-ui/core": "^1.1.0",
+    "@material-ui/icons": "^1.1.0",
+    "babel-plugin-lodash": "^3.3.2",
+    "body-parser": "^1.18.3",
+    "classnames": "^2.2.5",
+    "cookie": "^0.3.1",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "express-graphql": "^0.6.12",
+    "firebase-admin": "^5.12.1",
+    "firebase-functions": "^1.0.3",
+    "graphql": "^0.13.2",
+    "graphql-relay": "^0.5.5",
+    "history": "^4.7.2",
+    "hoist-non-react-statics": "^2.5.0",
+    "idx": "^2.3.0",
+    "jsonwebtoken": "^8.2.1",
+    "jwt-passport": "^0.0.5",
+    "knex": "^0.14.6",
+    "lodash": "^4.17.10",
+    "moment-timezone": "^0.5.17",
+    "passport": "^0.4.0",
+    "passport-facebook": "^2.1.1",
+    "passport-google-oauth20": "^1.0.0",
+    "pg": "^7.4.3",
+    "prop-types": "^15.6.1",
+    "query-string": "^6.1.0",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-relay": "^1.6.0",
+    "recompose": "^0.27.1",
+    "relay-runtime": "^1.6.0",
+    "request": "^2.87.0",
+    "request-promise-native": "^1.0.5",
+    "serialize-javascript": "^1.5.0",
+    "slug": "^0.9.1",
+    "styled-components": "^3.3.0",
+    "universal-router": "^6.0.0",
+    "uuid": "^3.2.1",
+    "validator": "^10.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.49",
+    "@babel/register": "^7.0.0-beta.49",
+    "babel-plugin-relay": "^1.6.0",
+    "babel-plugin-styled-components": "^1.5.1",
+    "chai": "^4.1.2",
+    "dotenv": "^5.0.1",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-flowtype": "^2.47.1",
+    "eslint-plugin-prettier": "^2.6.0",
+    "flow-bin": "^0.73.0",
+    "gh-pages": "^1.1.0",
+    "husky": "^0.15.0-rc.13",
+    "lint-staged": "^7.1.2",
+    "minimist": "^1.2.0",
+    "prettier": "^1.12.1",
+    "raw-loader": "^1.0.0-beta.0",
+    "react-app-tools": "^2.0.3",
+    "relay-compiler": "^1.6.0",
+    "stylelint": "^9.2.1",
+    "stylelint-config-primer": "^2.2.6",
+    "stylelint-config-standard": "^18.2.0",
+    "stylelint-config-styled-components-processor": "^0.1.1",
+    "stylelint-order": "^0.8.1",
+    "stylelint-processor-styled-components": "^1.3.1"
+  },
+  "lint-staged": {
+    "*.js": [
+      "yarn run eslint --no-ignore --fix --max-warnings=0",
+      "yarn run prettier --write",
+      "yarn run stylelint",
+      "git add --force"
+    ],
+    "*.json": [
+      "prettier --write",
+      "git add --force"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "scripts": {
+    "update-schema": "node ./scripts/update-schema",
+    "relay": "relay-compiler --src ./src --schema ./schema.graphql --include \"**/*.js\"",
+    "setup": "node ./scripts/setup",
+    "prestart": "yarn relay",
+    "start": "react-app start",
+    "build": "react-app build",
+    "test": "react-app test --env=jsdom",
+    "lint": "eslint --ignore-path .gitignore --ignore-pattern \"!**/.*\" . && stylelint \"src/**/*.js\"",
+    "lint-fix": "eslint --ignore-path .gitignore --ignore-pattern \"!**/.*\" --fix . && yarn run prettier --write \"**/*.{js,json}\"",
+    "db": "node ./scripts/db",
+    "db-save": "node ./scripts/db-save",
+    "db-change": "knex migrate:make",
+    "db-migrate": "knex migrate:latest",
+    "db-rollback": "knex migrate:rollback",
+    "db-seed": "knex seed:run",
+    "deploy": "yarn install && yarn build && firebase use dev && firebase deploy",
+    "deploy-prod": "yarn install && yarn build && firebase use prod && firebase deploy"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "underscore",
+  "packages": [
+    {
+      "name": "underscore",
+      "dependencies": 8,
+      "devDependencies": 3,
+      "score": 11
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "semantic-release",
+  "packages": [
+    {
+      "name": "semantic-release",
+      "devDependencies": 10,
+      "score": 10
+    }
+  ]
+}

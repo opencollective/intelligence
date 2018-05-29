@@ -1,0 +1,12 @@
+{
+  "name": "markdown-it",
+  "slug": "markdown-it",
+  "packages": [
+    {
+      "name": "markdown-it",
+      "devDependencies": 5,
+      "dependencies": 11,
+      "score": 38
+    }
+  ]
+}

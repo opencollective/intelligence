@@ -1,0 +1,60 @@
+{
+    "name": "cordova-fabric-plugin",
+    "version": "1.1.14-dev",
+    "description": "Cordova Fabric.io Plugin",
+    "cordova": {
+        "id": "cordova-fabric-plugin",
+        "platforms": [
+            "android",
+            "ios"
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/sarriaroman/FabricPlugin"
+    },
+    "keywords": [
+        "cordova",
+        "fabric",
+        "crashlytics",
+        "answers",
+        "events",
+        "device",
+        "ecosystem:cordova",
+        "cordova-android",
+        "cordova-ios"
+    ],
+    "author": "Roman A. Sarria",
+    "contributors": [
+        {
+            "name": "Justin Unterreiner",
+            "email": "justin.unterreiner@gmail.com",
+            "url": "https://github.com/Justin-Credible"
+        },
+        {
+            "name": "Eric McNiece",
+            "email": "emcniece@gmail.com",
+            "url": "https://github.com/emcniece"
+        }
+    ],
+    "license": "MIT",
+    "scripts": {
+        "transpile": "node_modules/.bin/babel www/*.es6 --out-dir .",
+        "add-packages": "./scripts/add-packages.sh",
+        "postinstall": "opencollective postinstall"
+    },
+    "devDependencies": {
+        "babel": "^5.8.35"
+    },
+    "packages": {
+        "fabric": "1.7.2",
+        "crashlytics": "3.9.3"
+    },
+    "dependencies": {
+        "opencollective": "^1.0.3"
+    },
+    "collective": {
+        "type": "opencollective",
+        "url": "https://opencollective.com/FabricPlugin"
+    }
+}

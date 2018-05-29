@@ -1,0 +1,21 @@
+{
+  "name": "stylelint",
+  "packages": [
+    {
+      "name": "stylelint",
+      "devDependencies": 18,
+      "score": 18
+    },
+    {
+      "name": "stylelint-config-standard",
+      "devDependencies": 15,
+      "score": 15
+    }
+  ],
+  "opencollective": {
+    "id": 755,
+    "name": "stylelint",
+    "slug": "stylelint"
+  },
+  "score": 33
+}

@@ -1,0 +1,16 @@
+{
+  "name": "eslint-config-airbnb",
+  "slug": "eslint-config-airbnb",
+  "packages": [
+    {
+      "name": "eslint-config-airbnb",
+      "devDependencies": 34,
+      "score": 34
+    },
+    {
+      "name": "eslint-config-airbnb-base",
+      "devDependencies": 15,
+      "score": 15
+    }
+  ]
+}

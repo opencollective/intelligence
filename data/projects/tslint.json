@@ -1,0 +1,12 @@
+{
+  "name": "tslint",
+  "slug": "tslint",
+  "packages": [
+    {
+      "name": "tslint",
+      "devDependencies": 35,
+      "dependencies": 2,
+      "score": 41
+    }
+  ]
+}

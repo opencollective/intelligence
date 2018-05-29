@@ -1,0 +1,46 @@
+{
+  "name": "inferno-test-utils",
+  "version": "5.0.6",
+  "license": "MIT",
+  "description": "Suite of utilities for testing Inferno applications",
+  "author": {
+    "name": "Matthew Wagerfield",
+    "email": "matthew@wagerfield.com"
+  },
+  "bugs": {
+    "url": "https://github.com/infernojs/inferno/issues"
+  },
+  "homepage": "https://github.com/infernojs/inferno#readme",
+  "keywords": [
+    "babel",
+    "react",
+    "inferno",
+    "framework",
+    "interfaces",
+    "tests",
+    "utils"
+  ],
+  "peerDependencies": {
+    "inferno": "^5"
+  },
+  "devDependencies": {
+    "inferno": "5.0.6",
+    "inferno-shared": "5.0.6",
+    "inferno-vnode-flags": "5.0.6"
+  },
+  "rollup": {
+    "bundledDependencies": [
+      "inferno-shared",
+      "inferno-vnode-flags"
+    ],
+    "moduleName": "Inferno.TestUtils",
+    "moduleGlobals": {
+      "inferno": "Inferno"
+    }
+  },
+  "main": "index.js",
+  "module": "dist/index.esm.js",
+  "dev:module": "dist/index.dev.esm.js",
+  "typings": "dist/index.d.ts",
+  "repository": "https://github.com/infernojs/inferno"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "react-router",
+  "slug": "react-router",
+  "packages": [
+    {
+      "name": "react-router",
+      "dependencies": 10,
+      "devDependencies": 6,
+      "score": 36
+    },
+    {
+      "name": "react-router-dom",
+      "devDependencies": 3,
+      "dependencies": 8,
+      "score": 27
+    }
+  ]
+}

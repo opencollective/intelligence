@@ -1,0 +1,116 @@
+{
+  "name": "@colmena/colmena",
+  "version": "0.0.0",
+  "description": "Colmena",
+  "private": false,
+  "license": "MIT",
+  "author": "Bram Borggreve <bram@colmena.io>",
+  "url": "https://github.com/colmena/colmena",
+  "homepage": "https://github.com/colmena/colmena",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/colmena/colmena"
+  },
+  "bugs": {
+    "url": "https://github.com/colmena/colmena/issues"
+  },
+  "keywords": [
+    "colmena",
+    "cms",
+    "mobile",
+    "backend",
+    "loopback",
+    "angular",
+    "admin"
+  ],
+  "scripts": {
+    "clean": "lerna clean --yes && node bin/clean",
+    "clean:api": "cd apps/api && npm run clean",
+    "clean:admin": "cd apps/admin && npm run clean",
+    "console": "cd apps/api && loopback-console server/server.js",
+    "contributors:add": "all-contributors add",
+    "contributors:generate": "all-contributors generate",
+    "build": "npm run build:admin && npm run build:api",
+    "build:admin": "lerna run build --stream --scope @colmena/admin",
+    "build:api": "lerna run build --stream --scope @colmena/api",
+    "dev": "lerna run dev --stream",
+    "dev:admin": "lerna run dev --stream --scope @colmena/admin",
+    "dev:api": "lerna run dev --stream --scope @colmena/api",
+    "servers": "npm run servers:start",
+    "servers:logs": "docker-compose logs -f",
+    "servers:start": "docker-compose up -d",
+    "servers:stop": "docker-compose stop",
+    "servers:rm": "npm run servers:stop && docker-compose rm -f",
+    "lint": "eslint . --fix",
+    "postinstall": "lerna bootstrap",
+    "sdk": "npm run sdk:api",
+    "sdk:api": "cross-env NODE_ENV=codegen lb-sdk --wipe enabled apps/api/server/server.js packages/admin-lb-sdk/src",
+    "start": "cd apps/api && npm start",
+    "test": "true",
+    "update": "lerna exec 'ncu -a && npm update'"
+  },
+  "dependencies": {
+    "cross-env": "5.0.1"
+  },
+  "devDependencies": {
+    "@angular/animations": "4.2.2",
+    "@angular/cli": "1.1.1",
+    "@angular/common": "4.2.2",
+    "@angular/compiler": "4.2.2",
+    "@angular/compiler-cli": "4.2.2",
+    "@angular/core": "4.2.2",
+    "@angular/forms": "4.2.2",
+    "@angular/http": "4.2.2",
+    "@angular/platform-browser": "4.2.2",
+    "@angular/platform-browser-dynamic": "4.2.2",
+    "@angular/router": "4.2.2",
+    "@ngrx/core": "1.2.0",
+    "@ngrx/effects": "2.0.3",
+    "@ngrx/router-store": "1.2.6",
+    "@ngrx/store": "2.2.2",
+    "@ngrx/store-devtools": "3.2.4",
+    "all-contributors-cli": "4.3.0",
+    "codelyzer": "3.0.1",
+    "core-js": "2.4.1",
+    "coreui-styles": "latest",
+    "eslint": "4.0.0",
+    "eslint-plugin-prettier": "2.1.1",
+    "font-awesome": "4.7.0",
+    "lerna": "2.0.0-rc.5",
+    "loopback-console": "1.1.0",
+    "ng-formly": "1.0.0-rc.9",
+    "ng2-file-upload": "^1.2.1",
+    "ng2-toasty": "4.0.3",
+    "ngrx-store-freeze": "0.1.9",
+    "ngrx-store-logger": "0.1.8",
+    "ngx-bootstrap": "1.7.1",
+    "nodemon": "1.11.0",
+    "prettier": "1.4.4",
+    "reselect": "3.0.1",
+    "rimraf": "2.6.1",
+    "rxjs": "5.4.0",
+    "simple-line-icons": "2.4.1",
+    "sweetalert2": "6.6.5",
+    "tslint": "5.4.3",
+    "typescript": "2.3.4",
+    "zone.js": "0.8.12"
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 6
+    },
+    "plugins": [
+      "prettier"
+    ],
+    "rules": {
+      "prettier/prettier": [
+        "error",
+        {
+          "semi": false,
+          "singleQuote": true,
+          "trailingComma": "es5"
+        }
+      ]
+    }
+  }
+}

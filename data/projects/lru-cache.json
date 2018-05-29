@@ -1,0 +1,13 @@
+{
+  "name": "lru-cache",
+  "slug": "lru-cache",
+  "ignored": true,
+  "packages": [
+    {
+      "name": "lru-cache",
+      "dependencies": 9,
+      "devDependencies": 2,
+      "score": 29
+    }
+  ]
+}

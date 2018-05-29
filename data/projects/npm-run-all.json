@@ -1,0 +1,13 @@
+{
+  "name": "npm-run-all",
+  "slug": "npm-run-all",
+  "ignored": true,
+  "packages": [
+    {
+      "name": "npm-run-all",
+      "devDependencies": 16,
+      "dependencies": 3,
+      "score": 25
+    }
+  ]
+}

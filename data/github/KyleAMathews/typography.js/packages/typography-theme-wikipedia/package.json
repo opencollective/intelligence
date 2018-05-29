@@ -1,0 +1,27 @@
+{
+  "name": "typography-theme-wikipedia",
+  "description": "A theme for Typography.js inspired by Wikipedia's typography",
+  "version": "0.15.11",
+  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "keywords": [
+    "css",
+    "typography",
+    "typography-theme"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/KyleAMathews/typography.js",
+  "bugs": {
+    "url": "https://github.com/KyleAMathews/typography.js/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KyleAMathews/typography.js.git"
+  },
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "../../node_modules/.bin/babel src --out-dir dist/",
+    "flow": "../../node_modules/.bin/flow",
+    "lint": "../../node_modules/.bin/eslint --ext .js,.jsx --ignore-path .gitignore .",
+    "watch": "../../node_modules/.bin/babel -w src --out-dir dist/"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "mkdirp",
+  "slug": "mkdirp",
+  "ignored": true,
+  "packages": [
+    {
+      "name": "mkdirp",
+      "dependencies": 20,
+      "devDependencies": 15,
+      "score": 75
+    }
+  ]
+}

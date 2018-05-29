@@ -1,0 +1,16 @@
+{
+  "name": "sinon",
+  "packages": [
+    {
+      "name": "sinon",
+      "devDependencies": 55,
+      "score": 55
+    }
+  ],
+  "opencollective": {
+    "id": 470,
+    "name": "sinon",
+    "slug": "sinon"
+  },
+  "score": 55
+}

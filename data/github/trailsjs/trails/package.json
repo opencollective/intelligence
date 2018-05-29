@@ -1,0 +1,92 @@
+{
+  "name": "trails",
+  "version": "3.2.2",
+  "description": "Modern Web Application Framework for Node.js",
+  "keywords": [
+    "framework",
+    "platform",
+    "microservices",
+    "ecosystem",
+    "rest",
+    "api",
+    "rails",
+    "grails",
+    "sails",
+    "trails",
+    "trailsjs",
+    "server",
+    "graphql"
+  ],
+  "scripts": {
+    "test": "eslint --ignore-path .gitignore index.js lib/ test/ && nyc mocha",
+    "test-performance": "eslint --ignore-path .gitignore . && mocha test-performance",
+    "ci": "cd .. && ci"
+  },
+  "pre-commit": [
+    "test"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trailsjs/trails.git"
+  },
+  "author": "Trails.js Team <hello@trailsjs.io>",
+  "contributors": [
+    {
+      "name": "Travis Webb",
+      "email": "me@traviswebb.com",
+      "url": "https://github.com/tjwebb"
+    },
+    {
+      "name": "Konstantin Zolotarev",
+      "url": "https://github.com/konstantinzolotarev"
+    },
+    {
+      "name": "Weyland Joyner",
+      "url": "https://github.com/weyj4"
+    },
+    {
+      "name": "Jimmy Aumard",
+      "url": "https://github.com/jaumard"
+    },
+    {
+      "name": "Robert Rossmann",
+      "url": "https://github.com/Alaneor"
+    },
+    {
+      "name": "Mike Hostetler",
+      "email": "mike@epicfirm.com"
+    },
+    {
+      "name": "Scott Wyatt",
+      "email": "scottwyatt86@gmail.com",
+      "url": "https://github.com/scott-wyatt"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/trailsjs/trails/issues"
+  },
+  "homepage": "http://trailsjs.io",
+  "dependencies": {
+    "lodash.merge": "4.6.0",
+    "mkdirp": "0.5.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.15.0",
+    "eslint-config-trails": "^3",
+    "mocha": "^4",
+    "nyc": "^11.4.1",
+    "pre-commit": "^1.2.2",
+    "proxyquire": "^1.8.0",
+    "smokesignals": "^3",
+    "trailpack": "^3"
+  },
+  "eslintConfig": {
+    "extends": "trails"
+  },
+  "engines": {
+    "node": ">= 7.6.0",
+    "npm": ">= 3.10.0"
+  },
+  "runkitExample": "test/runkitExample.js"
+}

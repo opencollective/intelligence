@@ -1,0 +1,22 @@
+{
+  "name": "electron",
+  "packages": [
+    {
+      "name": "electron",
+      "devDependencies": 16,
+      "dependencies": 7,
+      "score": 23
+    },
+    {
+      "name": "electron-builder",
+      "devDependencies": 17,
+      "score": 17
+    }
+  ],
+  "opencollective": {
+    "id": 13486,
+    "name": "electron",
+    "slug": "electron"
+  },
+  "score": 40
+}

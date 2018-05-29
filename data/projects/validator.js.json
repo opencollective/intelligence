@@ -1,0 +1,12 @@
+{
+  "name": "validator.js",
+  "slug": "validator.js",
+  "packages": [
+    {
+      "name": "validator",
+      "dependencies": 10,
+      "devDependencies": 2,
+      "score": 32
+    }
+  ]
+}

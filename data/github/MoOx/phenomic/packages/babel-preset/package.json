@@ -1,0 +1,28 @@
+{
+  "name": "@phenomic/babel-preset",
+  "version": "1.0.0-beta.3",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": "https://github.com/phenomic/phenomic.git",
+  "homepage": "https://phenomic.io",
+  "license": "MIT",
+  "authors": ["Maxime Thirouin (MoOx)", "bloodyowl <bloodyowl@icloud.com>"],
+  "keywords": [
+    "static",
+    "website",
+    "generator",
+    "compiler",
+    "phenomic",
+    "phenomic-plugin",
+    "babel-preset",
+    "babel",
+    "react"
+  ],
+  "description": "Babel preset, recommended for Phenomic",
+  "main": "lib/index.js",
+  "files": ["lib", "src", "!**/__tests__"],
+  "dependencies": {
+    "babel-preset-react-app": "^3.0.2"
+  }
+}

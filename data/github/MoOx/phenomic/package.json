@@ -1,0 +1,127 @@
+{
+  "private": true,
+  "name": "phenomic",
+  "repository": "https://github.com/phenomic/phenomic.git",
+  "homepage": "https://phenomic.io",
+  "license": "MIT",
+  "authors": ["Maxime Thirouin (MoOx)", "bloodyowl <bloodyowl@icloud.com>"],
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-eslint": "^8.2.2",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.4.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "chalk": "^1.1.3",
+    "cross-env": "^2.0.0",
+    "cross-spawn": "^5.1.0",
+    "eslint": "^4.19.1",
+    "eslint-config-i-am-meticulous": "^8.0.0",
+    "eslint-import-resolver-webpack": "^0.9.0",
+    "eslint-plugin-flowtype": "^2.46.1",
+    "eslint-plugin-import": "^2.10.0",
+    "eslint-plugin-react": "^7.7.0",
+    "eslint-plugin-react-native": "^3.2.1",
+    "flow-bin": "^0.68.0",
+    "git-exec-and-restage": "^1.0.1",
+    "globby": "^6.1.0",
+    "husky": "^0.13.3",
+    "jest": "^22.4.3",
+    "lerna": "^2.5.1",
+    "lint-staged": "^3.4.0",
+    "npm-run-all": "^3.0.0",
+    "prettier": "^1.8.0",
+    "trash-cli": "^1.4.0"
+  },
+  "scripts": {
+    "#<git hooks>": "handled by husky",
+    "precommit": "lint-staged",
+    "#</git hooks>": "handled by husky",
+    "cleanup-node_modules":
+      "trash node_modules packages/*/node_modules examples/*/node_modules website/node_modules",
+    "clean": "trash packages/*/lib",
+    "transpile":
+      "lerna exec -- babel src --optional runtime --out-dir lib --ignore \"__tests__\"",
+    "posttranspile": "lerna run prepare",
+    "watch":
+      "lerna exec --parallel -- babel -w src --optional runtime --out-dir lib --ignore \"__tests__\"",
+    "prepare": "yarn clean && yarn transpile",
+    "prerelease": "yarn prepare",
+    "release": "lerna publish",
+    "format": "yarn format:most && yarn format:re",
+    "format:most": "prettier --write \"**/*.{js,json,css,md}\"",
+    "format:re":
+      "find . -name \"*.re\" | grep -v \"node_modules\" | xargs refmt --in-place",
+    "links": "lerna exec -- yarn link",
+    "lint:eslint":
+      "eslint --ignore-path .gitignore --fix packages e2e-tests examples website",
+    "lint:flow": "flow check",
+    "lint": "npm-run-all --parallel lint:*",
+    "tests": "jest --runInBand --coverage packages",
+    "examples:build": "babel-node scripts/examples.js",
+    "examples:tests": "jest --bail examples",
+    "examples": "yarn examples:build && yarn examples:tests",
+    "website:start": "cd website && yarn start",
+    "website:build": "cd website && yarn build",
+    "website:test": "cd website && yarn test && jest website",
+    "test": "yarn lint && yarn tests",
+    "test-without-lint": "yarn tests",
+    "posttest": "yarn examples && yarn website:test"
+  },
+  "lint-staged": {
+    "*.{js,json,css,md}": ["git-exec-and-restage prettier --write"]
+  },
+  "babel": {
+    "presets": [
+      "babel-preset-env",
+      "babel-preset-stage-1",
+      "babel-preset-react"
+    ],
+    "plugins": ["babel-plugin-transform-runtime"]
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint-config-i-am-meticulous/react-flow",
+      "eslint-config-i-am-meticulous/react-native"
+    ],
+    "env": {
+      "jest": true
+    },
+    "rules": {
+      "import/no-namespace": 0,
+      "flowtype/type-id-match": 0,
+      "import/max-dependencies": [
+        2,
+        {
+          "max": 20
+        }
+      ],
+      "flowtype/require-valid-file-annotation": [
+        2,
+        "always",
+        {
+          "annotationStyle": "line"
+        }
+      ],
+      "flowtype/no-dupe-keys": 0
+    },
+    "settings": {
+      "import/resolver": {
+        "webpack": {
+          "config": {
+            "resolve": {
+              "extensions": [".web.js", ".js", ".json"]
+            }
+          }
+        }
+      }
+    }
+  },
+  "jest": {
+    "setupFiles": ["./jest-setup.js"],
+    "testURL": "test://url.tld/path",
+    "coveragePathIgnorePatterns": ["/node_modules/", "jest-setup.js"],
+    "testPathIgnorePatterns": ["/_output/", "/__fixtures__"]
+  },
+  "workspaces": ["website", "examples/*", "packages/*"]
+}

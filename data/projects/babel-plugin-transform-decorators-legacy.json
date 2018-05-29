@@ -1,0 +1,13 @@
+{
+  "name": "babel-plugin-transform-decorators-legacy",
+  "slug": "babel-plugin-transform-decorators-legacy",
+  "ignored": true,
+  "packages": [
+    {
+      "name": "babel-plugin-transform-decorators-legacy",
+      "devDependencies": 15,
+      "dependencies": 3,
+      "score": 24
+    }
+  ]
+}

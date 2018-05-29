@@ -1,0 +1,192 @@
+{
+    "name": "code-settings-sync",
+    "displayName": "Settings Sync",
+    "description": "Synchronize Settings, Snippets, Themes, File Icons, Launch, Keybindings, Workspaces and Extensions Across Multiple Machines Using GitHub Gist.",
+    "version": "2.9.2",
+    "icon": "images/cloud.png",
+    "publisher": "Shan",
+    "author": {
+        "name": "Shan Khan",
+        "url": "http://shanalikhan.github.io",
+        "email": "shanalikhan@hotmail.com"
+    },
+    "homepage": "https://shanalikhan.github.io",
+    "galleryBanner": {
+        "color": "#3B4859",
+        "theme": "dark"
+    },
+    "badges": [
+        {
+            "url": "https://vsmarketplacebadge.apphb.com/version/Shan.code-settings-sync.svg",
+            "description": "Latest Version",
+            "href": "https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync"
+        },
+        {
+            "url": "https://vsmarketplacebadge.apphb.com/installs/Shan.code-settings-sync.svg",
+            "description": "Total Downloads",
+            "href": "https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync"
+        },
+        {
+            "url": "https://vsmarketplacebadge.apphb.com/rating/Shan.code-settings-sync.svg",
+            "description": "Ratings",
+            "href": "https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync"
+        },
+        {
+            "url": "https://img.shields.io/badge/Join%20Community-slack-green.svg",
+            "description": "Join Slack Community",
+            "href": "https://join.slack.com/t/codesettingssync/shared_invite/enQtMzE3MjY5NTczNDMwLTYwMTIwNGExOGE2MTJkZWU0OTU5MmI3ZTc4N2JkZjhjMzY1OTk5OGExZjkwMDMzMDU4ZTBlYjk5MGQwZmMyNzk"
+        }
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/shanalikhan/code-settings-sync.git"
+    },
+    "bugs": {
+        "url": "https://github.com/shanalikhan/code-settings-sync/issues",
+        "email": "shanalikhan@hotmail.com"
+    },
+    "engines": {
+        "vscode": "^1.8.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "keywords": [
+        "vscode-sync",
+        "vscode-settings-sync",
+        "code-settings-sync",
+        "settings-sync",
+        "workspace-sync",
+        "multi-root ready"
+    ],
+    "activationEvents": [
+        "*",
+        "onCommand:extension.updateSettings",
+        "onCommand:extension.downloadSettings",
+        "onCommand:extension.resetSettings",
+        "onCommand:extension.HowSettings",
+        "onCommand:extension.otherOptions"
+    ],
+    "main": "./out/src/extension",
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.HowSettings",
+                "title": "Sync : How To Configure"
+            },
+            {
+                "command": "extension.downloadSettings",
+                "title": "Sync : Download Settings"
+            },
+            {
+                "command": "extension.updateSettings",
+                "title": "Sync : Update / Upload Settings"
+            },
+            {
+                "command": "extension.resetSettings",
+                "title": "Sync : Reset Extension Settings"
+            },
+            {
+                "command": "extension.otherOptions",
+                "title": "Sync : Advanced Options"
+            }
+        ],
+        "keybindings": [
+            {
+                "key": "alt+shift+u",
+                "command": "extension.updateSettings"
+            },
+            {
+                "key": "alt+shift+d",
+                "command": "extension.downloadSettings"
+            }
+        ],
+        "configuration": {
+            "properties": {
+                "sync.gist": {
+                    "type": "string",
+                    "default": "",
+                    "description": "GitHub GIST ID for Settings Sync."
+                },
+                "sync.lastUpload": {
+                    "type": "string",
+                    "default": "",
+                    "description": "Settings Sync last upload date. Set it as empty if you want to manually hit download."
+                },
+                "sync.lastDownload": {
+                    "type": "string",
+                    "default": "",
+                    "description": "Settings Sync last download date. Set it as empty if you want to manually hit download."
+                },
+                "sync.autoDownload": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Set it true to Auto Download the settings on code start. [Code Restart Required]"
+                },
+                "sync.autoUpload": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Set it true to Auto Upload on the settings change. [Code Restart Required]"
+                },
+                "sync.forceDownload": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Set it to true if you want to download the settings even when you have latest settings."
+                },
+                "sync.host": {
+                    "type": "string",
+                    "default": "",
+                    "description": "Set it to your GitHub Enterprise host if you want to use GHE."
+                },
+                "sync.pathPrefix": {
+                    "type": "string",
+                    "default": "",
+                    "description": "Set it to your GitHub Enterprise api prefix if you want to use GHE. Normally '/api/v3'. Only used when host is set."
+                },
+                "sync.quietSync": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "When set to true, will show the result in status bar instead of summary page."
+                },
+                "sync.askGistName": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Ask gist name upon creating. Helps you to identify the gist if you have multiple gists."
+                },
+                "sync.removeExtensions": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "Set it to false if you dont want to remove extensions while downloading."
+                },
+                "sync.syncExtensions": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "Set it to false if you dont want to upload / download the extensions."
+                }
+            },
+            "title": "Code Settings Sync Configuration Settings"
+        }
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install"
+    },
+    "devDependencies": {
+        "typescript": "^2.8.3",
+        "vscode": "^1.1.6",
+        "@types/node": "^10.0.3"
+    },
+    "dependencies": {
+        "adm-zip": "0.4.7",
+        "chokidar": "^2.0.2",
+        "fs": "^0.0.2",
+        "github": "^11.0.0",
+        "https-proxy-agent": "^2.1.1",
+        "ncp": "^2.0.0",
+        "proper-lockfile": "^2.0.1",
+        "rimraf": "^2.6.2",
+        "temp": "^0.8.3"
+    }
+}

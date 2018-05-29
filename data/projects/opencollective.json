@@ -1,0 +1,11 @@
+{
+  "name": "opencollective",
+  "packages": [
+    {
+      "name": "opencollective",
+      "dependencies": 68,
+      "devDependencies": 9,
+      "score": 77
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "name": "karma",
+  "packages": [
+    {
+      "name": "karma",
+      "devDependencies": 38,
+      "peerDependencies": 1,
+      "score": 39
+    },
+    {
+      "name": "karma-chrome-launcher",
+      "devDependencies": 28,
+      "score": 28
+    },
+    {
+      "name": "karma-jasmine",
+      "devDependencies": 20,
+      "score": 20
+    },
+    {
+      "name": "karma-coverage",
+      "devDependencies": 16,
+      "dependencies": 1,
+      "score": 17
+    },
+    {
+      "name": "karma-mocha",
+      "devDependencies": 17,
+      "score": 17
+    },
+    {
+      "name": "karma-phantomjs-launcher",
+      "devDependencies": 15,
+      "score": 15
+    },
+    {
+      "name": "karma-firefox-launcher",
+      "devDependencies": 11,
+      "score": 11
+    },
+    {
+      "name": "karma-sauce-launcher",
+      "devDependencies": 10,
+      "score": 10
+    }
+  ]
+}

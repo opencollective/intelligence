@@ -1,0 +1,12 @@
+{
+  "name": "marked",
+  "slug": "marked",
+  "packages": [
+    {
+      "name": "marked",
+      "devDependencies": 6,
+      "dependencies": 9,
+      "score": 33
+    }
+  ]
+}

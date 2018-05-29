@@ -1,0 +1,15 @@
+{
+  "name": "jasmine",
+  "packages": [
+    {
+      "name": "jasmine-core",
+      "devDependencies": 21,
+      "score": 21
+    },
+    {
+      "name": "jasmine",
+      "devDependencies": 10,
+      "score": 10
+    }
+  ]
+}

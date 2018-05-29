@@ -1,0 +1,42 @@
+{
+  "name": "vuejs",
+  "packages": [
+    {
+      "name": "vue",
+      "dependencies": 14,
+      "devDependencies": 9,
+      "peerDependencies": 2,
+      "score": 25
+    },
+    {
+      "name": "vue-template-compiler",
+      "devDependencies": 13,
+      "dependencies": 2,
+      "score": 15
+    },
+    {
+      "name": "vue-loader",
+      "devDependencies": 10,
+      "dependencies": 2,
+      "score": 12
+    },
+    {
+      "name": "vuex",
+      "dependencies": 9,
+      "devDependencies": 3,
+      "score": 12
+    },
+    {
+      "name": "vue-router",
+      "dependencies": 5,
+      "devDependencies": 3,
+      "score": 18
+    }
+  ],
+  "opencollective": {
+    "id": 903,
+    "name": "vue",
+    "slug": "vuejs"
+  },
+  "score": 82
+}

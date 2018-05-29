@@ -1,0 +1,11 @@
+{
+  "name": "commander",
+  "packages": [
+    {
+      "name": "commander",
+      "dependencies": 12,
+      "devDependencies": 3,
+      "score": 15
+    }
+  ]
+}

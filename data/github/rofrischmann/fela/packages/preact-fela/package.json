@@ -1,0 +1,32 @@
+{
+  "name": "preact-fela",
+  "version": "7.3.0",
+  "description": "Preact bindings for Fela",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "jsnext:main": "es/index.js",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "lib/**",
+    "es/**"
+  ],
+  "repository": "https://github.com/rofrischmann/fela/",
+  "keywords": [
+    "fela",
+    "dynamic styling",
+    "preact",
+    "css",
+    "styling",
+    "cssinjs"
+  ],
+  "author": "Robin Frischmann",
+  "license": "MIT",
+  "peerDependencies": {
+    "preact": "*"
+  },
+  "dependencies": {
+    "fela-bindings": "^2.3.0",
+    "fela-dom": "^7.0.8"
+  }
+}

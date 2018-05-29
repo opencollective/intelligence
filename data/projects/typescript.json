@@ -1,0 +1,12 @@
+{
+  "name": "typescript",
+  "packages": [
+    {
+      "name": "typescript",
+      "devDependencies": 56,
+      "dependencies": 5,
+      "peerDependencies": 1,
+      "score": 62
+    }
+  ]
+}

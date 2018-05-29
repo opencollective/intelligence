@@ -1,0 +1,23 @@
+{
+  "name": "jsonmvc-util-load",
+  "description": "JSONMVC util for loading a module",
+  "version": "0.3.6",
+  "main": "dist/jsonmvc-util-load.js",
+  "browser": "dist/jsonmvc-util-load.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jsonmvc/jsonmvc.git"
+  },
+  "keywords": [
+    "jsonmvc",
+    "loader",
+    "build",
+    "development"
+  ],
+  "author": "Constantin Dumitrescu <dum.constantin@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jsonmvc/jsonmvc/issues"
+  },
+  "homepage": "https://github.com/jsonmvc/jsonmvc/packages/jsonmvc-util-load#readme"
+}

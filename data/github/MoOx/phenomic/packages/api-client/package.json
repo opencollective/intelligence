@@ -1,0 +1,40 @@
+{
+  "name": "@phenomic/api-client",
+  "version": "1.0.0-beta.3",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": "https://github.com/phenomic/phenomic.git",
+  "homepage": "https://phenomic.io",
+  "license": "MIT",
+  "authors": ["Maxime Thirouin (MoOx)", "bloodyowl <bloodyowl@icloud.com>"],
+  "keywords": [
+    "static",
+    "website",
+    "generator",
+    "compiler",
+    "phenomic",
+    "phenomic-plugin",
+    "phenomic-plugin-renderer",
+    "renderer",
+    "react"
+  ],
+  "description":
+    "Phenomic Content API client that allow you to make queries to retrieve resources",
+  "main": "lib/index.js",
+  "files": ["lib", "src", "!**/__tests__", "bsconfig.json"],
+  "dependencies": {
+    "debug": "^2.6.0",
+    "isomorphic-fetch": "^2.2.1",
+    "simple-json-fetch": "^1.0.1"
+  },
+  "devDependencies": {
+    "bs-platform": "^2.2.0"
+  },
+  "scripts": {
+    "reason:cleanup": "bsb -clean-world",
+    "reason:compile": "bsb -make-world",
+    "prepare": "yarn reason:cleanup && yarn reason:compile",
+    "dev": "yarn reason:compile -- -w"
+  }
+}

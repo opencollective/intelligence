@@ -1,0 +1,17 @@
+{
+  "name": "mocha",
+  "packages": [
+    {
+      "name": "mocha",
+      "devDependencies": 83,
+      "dependencies": 1,
+      "score": 84
+    }
+  ],
+  "opencollective": {
+    "id": 58,
+    "name": "MochaJS",
+    "slug": "mochajs"
+  },
+  "score": 84
+}

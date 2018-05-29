@@ -1,0 +1,11 @@
+{
+  "name": "eslint-plugin-flowtype",
+  "slug": "eslint-plugin-flowtype",
+  "packages": [
+    {
+      "name": "eslint-plugin-flowtype",
+      "devDependencies": 25,
+      "score": 25
+    }
+  ]
+}

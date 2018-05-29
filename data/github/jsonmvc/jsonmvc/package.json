@@ -1,0 +1,103 @@
+{
+  "private": true,
+  "description": "The JSONMVC framework",
+  "scripts-info": {
+    "build": "Build an ES6 module"
+  },
+  "scripts": {
+    "test": "jest -c jest.src.json",
+    "test:snyk": "echo \"snyk test; off for now\"",
+    "test:dist": "jest -c jest.dist.json",
+    "test:full": "npm run clean && npm run build:modules && npm run build && npm run test:snyk && npm test && npm run test:dist",
+    "test-on-travis": "npm run build:modules && npm run build && npm test && cat ./coverage/lcov.info | ./node_modules/.bin/codecov && npm run test:dist",
+    "build": "gulp --gulpfile gulpfile.babel.js build",
+    "clean": "gulp --gulpfile gulpfile.babel.js clean",
+    "build:modules": "gulp --gulpfile gulpfile.babel.js build:modules",
+    "bootstrap": "lerna bootstrap",
+    "suite": "npm run bootstrap && npm run test:full",
+    "postinstall": "opencollective postinstall",
+    "publish": "npm run suite && lerna publish"
+  },
+  "engines": {
+    "node": ">= 4.x <= 8.x",
+    "npm": ">= 2.x <= 5.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsonmvc/jsonmvc.git"
+  },
+  "keywords": [
+    "json",
+    "mvc",
+    "framework",
+    "functional",
+    "architecture",
+    "data"
+  ],
+  "author": "Constantin Dumitrescu <dum.constantin@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jsonmvc/jsonmvc/issues"
+  },
+  "homepage": "https://github.com/jsonmvc/jsonmvc#readme",
+  "dependencies": {
+    "@fdaciuk/ajax": "^2.3.0",
+    "json-schema-defaults": "^0.3.0",
+    "jsonmvc-db": "^0.6.11",
+    "lodash": "https://registry.npmjs.org/lodash/-/lodash-4.17.2.tgz",
+    "most": "^1.6.2",
+    "opencollective": "^1.0.3",
+    "shortid": "^2.2.8",
+    "source-map-support": "0.5.0",
+    "vue": "^2.4.3",
+    "zen-observable": "^0.6.0"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.0",
+    "babel-jest": "^21.0.0",
+    "babel-plugin-add-module-exports": "https://registry.npmjs.org/babel-plugin-add-module-exports/-/babel-plugin-add-module-exports-0.2.1.tgz",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-plugin-lodash": "^3.2.11",
+    "babel-plugin-transform-pug-html": "^0.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "codecov": "^3.0.0",
+    "del": "^3.0.0",
+    "firebase": "^4.3.0",
+    "framework7": "^2.0.0",
+    "glob": "^7.1.2",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.0",
+    "jest": "^21.2.1",
+    "lerna": "^2.0.0",
+    "lodash-es": "^4.17.4",
+    "performance-now": "^2.1.0",
+    "promise": "^8.0.1",
+    "rollup": "^0.52.1",
+    "rollup-plugin-alias": "^1.3.1",
+    "rollup-plugin-babel": "^3.0.2",
+    "rollup-plugin-commonjs": "^8.2.0",
+    "rollup-plugin-grapher": "^0.2.0",
+    "rollup-plugin-json": "^2.3.0",
+    "rollup-plugin-node-builtins": "^2.1.2",
+    "rollup-plugin-node-globals": "^1.1.0",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-replace": "^2.0.0",
+    "rollup-plugin-uglify": "^2.0.1",
+    "rollup-plugin-vue": "^3.0.0",
+    "snyk": "^1.40.1",
+    "standard": "^10.0.3",
+    "yaml-js": "^0.2.0",
+    "yamljs": "^0.3.0"
+  },
+  "collective": {
+    "type": "opencollective",
+    "url": "https://opencollective.com/jsonmvc",
+    "logo": "https://opencollective.com/opencollective/logo.txt"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}

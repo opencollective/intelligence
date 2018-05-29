@@ -1,0 +1,27 @@
+{
+  "name": "jsonmvc-module-fields",
+  "description": "A JSONMVC module for dealing with form fields",
+  "version": "0.3.6",
+  "main": "dist/jsonmvc-module-fields.js",
+  "browser": "dist/jsonmvc-module-fields.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jsonmvc/jsonmvc.git"
+  },
+  "keywords": [
+    "jsonmvc",
+    "module",
+    "forms",
+    "fields",
+    "development"
+  ],
+  "author": "Constantin Dumitrescu <dum.constantin@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jsonmvc/jsonmvc/issues"
+  },
+  "homepage": "https://github.com/jsonmvc/jsonmvc/packages/jsonmvc-module-fields#readme",
+  "dependencies": {
+    "lodash-es": "^4.17.4"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "jsonwebtoken",
+  "slug": "jsonwebtoken",
+  "packages": [
+    {
+      "name": "jsonwebtoken",
+      "dependencies": 8,
+      "score": 24
+    }
+  ]
+}

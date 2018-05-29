@@ -1,0 +1,20 @@
+{
+  "name": "standard",
+  "packages": [
+    {
+      "name": "eslint-plugin-standard",
+      "devDependencies": 23,
+      "score": 23
+    },
+    {
+      "name": "eslint-config-standard",
+      "devDependencies": 22,
+      "score": 22
+    },
+    {
+      "name": "standard",
+      "devDependencies": 14,
+      "score": 14
+    }
+  ]
+}

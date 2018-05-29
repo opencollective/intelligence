@@ -1,0 +1,12 @@
+{
+  "name": "lint-staged",
+  "slug": "lint-staged",
+  "packages": [
+    {
+      "name": "lint-staged",
+      "devDependencies": 55,
+      "dependencies": 1,
+      "score": 58
+    }
+  ]
+}

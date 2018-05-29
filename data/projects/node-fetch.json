@@ -1,0 +1,12 @@
+{
+  "name": "node-fetch",
+  "slug": "node-fetch",
+  "packages": [
+    {
+      "name": "node-fetch",
+      "dependencies": 7,
+      "devDependencies": 2,
+      "score": 23
+    }
+  ]
+}

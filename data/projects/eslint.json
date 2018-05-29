@@ -1,0 +1,11 @@
+{
+  "name": "eslint",
+  "packages": [
+    {
+      "name": "eslint",
+      "devDependencies": 136,
+      "dependencies": 3,
+      "score": 139
+    }
+  ]
+}

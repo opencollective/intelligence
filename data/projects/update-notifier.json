@@ -1,0 +1,11 @@
+{
+  "name": "update-notifier",
+  "slug": "update-notifier",
+  "packages": [
+    {
+      "name": "update-notifier",
+      "dependencies": 8,
+      "score": 24
+    }
+  ]
+}

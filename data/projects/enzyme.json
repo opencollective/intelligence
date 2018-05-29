@@ -1,0 +1,15 @@
+{
+  "name": "enzyme",
+  "packages": [
+    {
+      "name": "enzyme",
+      "devDependencies": 26,
+      "score": 26
+    },
+    {
+      "name": "enzyme-adapter-react-16",
+      "devDependencies": 16,
+      "score": 16
+    }
+  ]
+}

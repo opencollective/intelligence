@@ -1,0 +1,66 @@
+{
+  "name": "@accounts/server",
+  "version": "0.1.0-beta.12",
+  "description": "Fullstack authentication and accounts-management",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "clean": "rimraf lib",
+    "start": "tsc --watch",
+    "precompile": "npm run clean",
+    "compile": "tsc",
+    "prepublishOnly": "npm run compile",
+    "test": "npm run testonly",
+    "test-ci": "npm lint && npm coverage",
+    "testonly": "jest",
+    "test:watch": "jest --watch",
+    "coverage": "npm run testonly -- --coverage"
+  },
+  "jest": {
+    "transform": {
+      ".(ts|tsx)": "<rootDir>/../../node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx)$",
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/accounts-js/accounts/tree/master/packages/server"
+  },
+  "keywords": [
+    "rest",
+    "graphql",
+    "grant",
+    "auth",
+    "authentication",
+    "accounts",
+    "users",
+    "oauth"
+  ],
+  "author": "Tim Mikeladze",
+  "license": "MIT",
+  "dependencies": {
+    "@accounts/common": "^0.1.0-beta.12",
+    "@accounts/types": "^0.1.0-beta.12",
+    "babel-polyfill": "^6.23.0",
+    "bcryptjs": "^2.4.0",
+    "emittery": "^0.3.0",
+    "jsonwebtoken": "^8.0.0",
+    "jwt-decode": "^2.1.0",
+    "lodash": "^4.16.4"
+  },
+  "devDependencies": {
+    "@types/jest": "22.2.3",
+    "@types/jsonwebtoken": "7.2.7",
+    "@types/jwt-decode": "2.2.1",
+    "@types/node": "9.6.15",
+    "jest": "22.4.3",
+    "rimraf": "2.6.2"
+  }
+}

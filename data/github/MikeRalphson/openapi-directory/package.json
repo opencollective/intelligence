@@ -1,0 +1,41 @@
+{
+  "dependencies": {
+    "api-spec-converter": "git://github.com/APIs-guru/api-spec-converter",
+    "bluebird": "^3.3.4",
+    "commander": "^2.8.1",
+    "concurrent-transform": "^1.0.0",
+    "deep-sort-object": "^1.0.1",
+    "deploy-to-gh-pages": "^1.2.0",
+    "editor": "^1.0.0",
+    "glob": "^7.0.3",
+    "gulp": "^3.9.1",
+    "gulp-awspublish": "^3.2.0",
+    "gulp-rename": "^1.2.2",
+    "js-yaml": "^3.4.3",
+    "json-merge-patch": "^0.2.3",
+    "json-pointer": "^0.5.0",
+    "jsondiffpatch": "^0.1.33",
+    "jsonpath": "^0.2.0",
+    "lodash": "^4.6.1",
+    "makeRequest": "github:apis-guru/makeRequest",
+    "merge-stream": "^1.0.0",
+    "mime-db": "^1.19.0",
+    "mime-lookup": "0.0.2",
+    "mkdirp": "^0.5.1",
+    "mktemp": "^0.4.0",
+    "parse-domain": "^0.2.0",
+    "sanitize-filename": "^1.5.3",
+    "shelljs": "^0.7.0",
+    "swagger-methods": "^1.0.0",
+    "urijs": "^1.16.1"
+  },
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/APIs-guru/api-models.git"
+  },
+  "scripts": {
+    "test": "scripts/collection.js validate",
+    "deploy": "scripts/deploy.js && ./scripts/deploy_badges.js && gulp publish"
+  }
+}

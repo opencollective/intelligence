@@ -1,0 +1,13 @@
+{
+  "name": "fs-extra",
+  "slug": "fs-extra",
+  "ignored": true,
+  "packages": [
+    {
+      "name": "fs-extra",
+      "devDependencies": 16,
+      "dependencies": 20,
+      "score": 76
+    }
+  ]
+}

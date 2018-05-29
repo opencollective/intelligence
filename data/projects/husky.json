@@ -1,0 +1,10 @@
+{
+  "name": "husky",
+  "packages": [
+    {
+      "name": "husky",
+      "devDependencies": 64,
+      "score": 64
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "node-async",
+  "slug": "node-async",
+  "packages": [
+    {
+      "name": "async",
+      "devDependencies": 8,
+      "dependencies": 13,
+      "score": 47
+    }
+  ]
+}

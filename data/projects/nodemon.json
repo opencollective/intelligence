@@ -1,0 +1,16 @@
+{
+  "name": "nodemon",
+  "packages": [
+    {
+      "name": "nodemon",
+      "devDependencies": 14,
+      "score": 14
+    }
+  ],
+  "opencollective": {
+    "id": 10352,
+    "name": "nodemon",
+    "slug": "nodemon"
+  },
+  "score": 14
+}

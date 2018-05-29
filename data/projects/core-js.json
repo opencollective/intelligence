@@ -1,0 +1,11 @@
+{
+  "name": "core-js",
+  "packages": [
+    {
+      "name": "core-js",
+      "dependencies": 9,
+      "devDependencies": 6,
+      "score": 15
+    }
+  ]
+}

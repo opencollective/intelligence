@@ -1,0 +1,12 @@
+{
+  "name": "immutable",
+  "slug": "immutable",
+  "packages": [
+    {
+      "name": "immutable",
+      "dependencies": 5,
+      "devDependencies": 1,
+      "score": 16
+    }
+  ]
+}

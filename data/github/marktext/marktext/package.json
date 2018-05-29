@@ -1,0 +1,187 @@
+{
+  "name": "marktext",
+  "version": "0.10.21",
+  "author": "Jocs <ransixi@gmail.com>",
+  "description": "Next generation markdown editor",
+  "license": "MIT",
+  "main": "./dist/electron/main.js",
+  "scripts": {
+    "release:win:linux": "node .electron-vue/build.js && electron-builder --win --linux",
+    "release": "node .electron-vue/build.js && electron-builder -mwl",
+    "release:linux": "node .electron-vue/build.js && electron-builder --linux",
+    "release:mac": "node .electron-vue/build.js && electron-builder --mac",
+    "release:win": "node .electron-vue/build.js && electron-builder --win",
+    "build": "node .electron-vue/build.js && electron-builder",
+    "build:dir": "node .electron-vue/build.js && electron-builder --dir",
+    "build:clean": "cross-env BUILD_TARGET=clean node .electron-vue/build.js",
+    "build:dev": "node .electron-vue/build.js",
+    "build:web": "cross-env BUILD_TARGET=web node .electron-vue/build.js",
+    "dev": "node .electron-vue/dev-runner.js",
+    "e2e": "npm run pack && mocha test/e2e",
+    "lint": "eslint --ext .js,.vue -f ./node_modules/eslint-friendly-formatter src test",
+    "lint:fix": "eslint --ext .js,.vue -f ./node_modules/eslint-friendly-formatter --fix src test",
+    "pack": "npm run pack:main && npm run pack:renderer",
+    "pack:main": "cross-env NODE_ENV=production webpack --progress --colors --config .electron-vue/webpack.main.config.js",
+    "pack:renderer": "cross-env NODE_ENV=production webpack --progress --colors --config .electron-vue/webpack.renderer.config.js",
+    "test": "npm run unit && npm run e2e",
+    "unit": "karma start test/unit/karma.conf.js",
+    "postinstall": "npm run lint:fix"
+  },
+  "build": {
+    "productName": "Mark Text",
+    "appId": "com.github.marktext.marktext",
+    "asar": true,
+    "directories": {
+      "output": "build"
+    },
+    "fileAssociations": {
+      "ext": [
+        "md",
+        "markdown",
+        "mmd",
+        "mdown",
+        "mdtxt",
+        "mdtext"
+      ],
+      "role": "Editor"
+    },
+    "files": [
+      "dist/electron/**/*"
+    ],
+    "dmg": {
+      "contents": [
+        {
+          "x": 410,
+          "y": 150,
+          "type": "link",
+          "path": "/Applications"
+        },
+        {
+          "x": 130,
+          "y": 150,
+          "type": "file"
+        }
+      ]
+    },
+    "mac": {
+      "icon": "build/icons/icon.icns"
+    },
+    "win": {
+      "icon": "build/icons/icon.ico",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "ia32",
+            "x64"
+          ]
+        }
+      ],
+      "requestedExecutionLevel": "asInvoker"
+    },
+    "nsis": {
+      "perMachine": true,
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "include": "build/windows/installer.nsh"
+    },
+    "linux": {
+      "category": "Office;TextEditor;Utility",
+      "icon": "build/icons"
+    },
+    "snap": {
+      "confinement": "classic",
+      "grade": "stable",
+      "plugs": [
+        "default",
+        "classic-support",
+        "wayland"
+      ]
+    }
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cheerio": "^1.0.0-rc.2",
+    "codemirror": "^5.36.0",
+    "css-tree": "^1.0.0-alpha.28",
+    "dompurify": "^1.0.3",
+    "element-ui": "^2.3.9",
+    "file-icons-js": "^1.0.3",
+    "fs-extra": "^6.0.1",
+    "fuzzaldrin": "^2.1.0",
+    "html-tags": "^2.0.0",
+    "katex": "^0.10.0-alpha",
+    "mousetrap": "^1.6.1",
+    "parse5": "^5.0.0",
+    "snabbdom": "^0.7.1",
+    "snabbdom-to-html": "^5.1.1",
+    "snabbdom-virtualize": "^0.7.0",
+    "turndown": "^4.0.2",
+    "turndown-plugin-gfm": "^1.0.2",
+    "vue": "^2.5.16",
+    "vue-electron": "^1.0.6",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-component": "^1.1.1",
+    "babel-plugin-istanbul": "^4.1.6",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "cfonts": "^2.1.2",
+    "chai": "^4.0.0",
+    "chalk": "^2.4.1",
+    "copy-webpack-plugin": "^4.5.1",
+    "cross-env": "^5.1.6",
+    "css-loader": "^0.28.11",
+    "del": "^3.0.0",
+    "devtron": "^1.4.0",
+    "electron": "^2.0.2",
+    "electron-builder": "^20.14.7",
+    "electron-debug": "^1.5.0",
+    "electron-devtools-installer": "^2.2.4",
+    "electron-updater": "^2.21.10",
+    "electron-window-state": "^4.1.1",
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-html": "^4.0.3",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^3.2.0",
+    "inject-loader": "^4.0.1",
+    "karma": "^1.3.0",
+    "karma-chai": "^0.1.0",
+    "karma-coverage": "^1.1.1",
+    "karma-electron": "^5.3.0",
+    "karma-mocha": "^1.2.0",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-spec-reporter": "^0.0.31",
+    "karma-webpack": "^2.0.1",
+    "mini-css-extract-plugin": "^0.4.0",
+    "mocha": "^3.0.2",
+    "multispinner": "^0.2.1",
+    "node-loader": "^0.6.0",
+    "require-dir": "^1.0.0",
+    "spectron": "^3.8.0",
+    "style-loader": "^0.21.0",
+    "url-loader": "^1.0.1",
+    "vue-html-loader": "^1.2.4",
+    "vue-loader": "^15.2.0",
+    "vue-style-loader": "^4.1.0",
+    "vue-template-compiler": "^2.5.16",
+    "webpack": "^4.8.3",
+    "webpack-cli": "^2.1.4",
+    "webpack-dev-server": "^3.1.4",
+    "webpack-hot-middleware": "^2.22.2",
+    "webpack-merge": "^4.1.2"
+  }
+}

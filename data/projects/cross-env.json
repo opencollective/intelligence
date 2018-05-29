@@ -1,0 +1,12 @@
+{
+  "name": "cross-env",
+  "slug": "cross-env",
+  "packages": [
+    {
+      "name": "cross-env",
+      "devDependencies": 64,
+      "dependencies": 5,
+      "score": 79
+    }
+  ]
+}

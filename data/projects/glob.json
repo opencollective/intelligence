@@ -1,0 +1,13 @@
+{
+  "name": "glob",
+  "slug": "glob",
+  "ignored": true,
+  "packages": [
+    {
+      "name": "glob",
+      "dependencies": 23,
+      "devDependencies": 24,
+      "score": 93
+    }
+  ]
+}

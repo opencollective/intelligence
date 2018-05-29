@@ -1,0 +1,28 @@
+{
+  "name": "jsonmvc-module-forms",
+  "description": "A JSONMVC module for forms",
+  "version": "0.3.6",
+  "main": "dist/jsonmvc-module-forms.js",
+  "browser": "dist/jsonmvc-module-forms.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jsonmvc/jsonmvc.git"
+  },
+  "keywords": [
+    "jsonmvc",
+    "forms",
+    "data",
+    "development"
+  ],
+  "author": "Constantin Dumitrescu <dum.constantin@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jsonmvc/jsonmvc/issues"
+  },
+  "homepage": "https://github.com/jsonmvc/jsonmvc/packages/jsonmvc-module-forms#readme",
+  "dependencies": {
+    "jsonmvc-helper-observer": "^0.3.6",
+    "jsonmvc-helper-stream": "^0.3.6",
+    "lodash-es": "^4.17.4"
+  }
+}

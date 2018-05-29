@@ -1,0 +1,43 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "prelint": "tsc",
+    "lint": "echo 'eslint will be moved to TSLint'",
+    "postlint": "documentation lint packages/turf-*/index.js",
+    "pretest": "lerna bootstrap --use-workspaces && npm run lint",
+    "test": "lerna run test --use-workspaces",
+    "docs": "node ./scripts/generate-readmes",
+    "postinstall": "opencollective postinstall"
+  },
+  "devDependencies": {
+    "@types/geojson": "*",
+    "@types/node": "*",
+    "camelcase": "*",
+    "d3-queue": "*",
+    "decamelize": "*",
+    "documentation": "*",
+    "eslint": "*",
+    "eslint-config-mourner": "*",
+    "fs-extra": "*",
+    "lerna": "2.8.0",
+    "load-json-file": "*",
+    "meow": "*",
+    "progress": "*",
+    "rollup": "*",
+    "rollup-plugin-typescript": "*",
+    "tape": "*",
+    "typescript": "*",
+    "yamljs": "*"
+  },
+  "dependencies": {
+    "opencollective": "^1.0.3"
+  },
+  "collective": {
+    "type": "opencollective",
+    "url": "https://opencollective.com/turf",
+    "logo": "https://opencollective.com/turf/logo.txt"
+  }
+}

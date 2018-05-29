@@ -1,0 +1,11 @@
+{
+  "name": "browser-sync",
+  "packages": [
+    {
+      "name": "browser-sync",
+      "devDependencies": 9,
+      "dependencies": 1,
+      "score": 10
+    }
+  ]
+}

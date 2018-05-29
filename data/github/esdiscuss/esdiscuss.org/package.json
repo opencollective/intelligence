@@ -1,0 +1,55 @@
+{
+  "name": "esdiscuss.org",
+  "version": "5.4.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/esdiscuss/esdiscuss.org.git"
+  },
+  "author": "ForbesLindesay",
+  "license": "MIT",
+  "dependencies": {
+    "algoliasearch": "^3.20.4",
+    "body-parser": "^1.17.1",
+    "browserify-middleware": "^8.0.0",
+    "cookie-session": "~2.0.0-beta.1",
+    "express": "^4.15.2",
+    "gethub": "^2.0.2",
+    "github-stream": "^1.0.1",
+    "highlight.js": "^9.10.0",
+    "jstransformer": "^1.0.0",
+    "jstransformer-clean-css": "^2.0.0",
+    "jstransformer-less": "^2.2.0",
+    "jstransformer-markdown-it": "^2.0.0",
+    "keyboard": "0.0.1",
+    "markdown-it": "^8.0.0",
+    "moment": "^2.22.0",
+    "ms": "~2.0.0",
+    "passport": "~0.3.2",
+    "passport-github": "~1.1.0",
+    "passport-persona": "~0.2.0",
+    "prepare-response": "^2.0.0",
+    "pug": "^2.0.0-alpha1",
+    "q": "~1.5.0",
+    "request": "~2.86.0",
+    "serve-favicon": "^2.5.0",
+    "slugg": "^1.2.1",
+    "then-mongo": "^3.0.1",
+    "transform": "~1.1.2"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test local",
+    "predeploy": "npm i heroku-release",
+    "deploy": "npm run deploy:staging && npm run deploy:promote",
+    "deploy:staging": "heroku-release publish --app esdiscuss-staging && node test staging",
+    "deploy:promote": "heroku-release promote -p esdiscuss -s esdiscuss-staging -t esdiscuss && node test prod"
+  },
+  "host": "esdiscuss.org",
+  "engines": {
+    "node": "10.1.0"
+  },
+  "devDependencies": {
+    "testit": "^3.0.0"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "codecov",
+  "slug": "codecov",
+  "packages": [
+    {
+      "name": "codecov",
+      "devDependencies": 22,
+      "score": 22
+    }
+  ]
+}

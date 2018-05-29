@@ -1,0 +1,11 @@
+{
+  "name": "chart.js",
+  "slug": "chart.js",
+  "packages": [
+    {
+      "name": "chart.js",
+      "dependencies": 5,
+      "score": 15
+    }
+  ]
+}

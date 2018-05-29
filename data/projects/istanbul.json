@@ -1,0 +1,21 @@
+{
+  "name": "istanbul",
+  "packages": [
+    {
+      "name": "nyc",
+      "devDependencies": 33,
+      "score": 33
+    },
+    {
+      "name": "istanbul",
+      "devDependencies": 27,
+      "dependencies": 1,
+      "score": 28
+    },
+    {
+      "name": "babel-plugin-istanbul",
+      "devDependencies": 11,
+      "score": 11
+    }
+  ]
+}

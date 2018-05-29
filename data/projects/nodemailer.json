@@ -1,0 +1,15 @@
+{
+  "name": "nodemailer",
+  "packages": [
+    {
+      "name": "nodemailer",
+      "dependencies": 11,
+      "score": 11
+    }
+  ],
+  "opencollective": {
+    "id": 12010,
+    "name": "Nodemailer",
+    "slug": "nodemailer"
+  }
+}

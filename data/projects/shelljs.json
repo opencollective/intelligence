@@ -1,0 +1,11 @@
+{
+  "name": "shelljs",
+  "packages": [
+    {
+      "name": "shelljs",
+      "dependencies": 6,
+      "devDependencies": 14,
+      "score": 20
+    }
+  ]
+}

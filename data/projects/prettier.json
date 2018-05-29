@@ -1,0 +1,21 @@
+{
+  "name": "prettier",
+  "packages": [
+    {
+      "name": "prettier",
+      "dependencies": 2,
+      "devDependencies": 71,
+      "score": 73
+    },
+    {
+      "name": "eslint-config-prettier",
+      "devDependencies": 26,
+      "score": 26
+    },
+    {
+      "name": "eslint-plugin-prettier",
+      "devDependencies": 22,
+      "score": 22
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "jsonmvc-util-changes",
+  "description": "JSONMVC util for parsing changes",
+  "version": "0.3.6",
+  "main": "dist/jsonmvc-util-changes.js",
+  "browser": "dist/jsonmvc-util-changes.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jsonmvc/jsonmvc.git"
+  },
+  "keywords": [
+    "jsonmvc",
+    "build",
+    "hmr",
+    "hot module reload",
+    "changes",
+    "development"
+  ],
+  "author": "Constantin Dumitrescu <dum.constantin@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jsonmvc/jsonmvc/issues"
+  },
+  "homepage": "https://github.com/jsonmvc/jsonmvc/packages/jsonmvc-util-changes#readme",
+  "dependencies": {
+    "jsonmvc-util-load": "^0.3.6"
+  }
+}

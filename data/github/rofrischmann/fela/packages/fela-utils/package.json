@@ -1,0 +1,30 @@
+{
+  "name": "fela-utils",
+  "version": "8.0.7",
+  "description": "Internal utilities for Fela",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "jsnext:main": "es/index.js",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "lib/**",
+    "es/**"
+  ],
+  "repository": "https://github.com/rofrischmann/fela/",
+  "keywords": [
+    "fela",
+    "fela-utils",
+    "cssinjs"
+  ],
+  "author": "Robin Frischmann",
+  "license": "MIT",
+  "dependencies": {
+    "css-in-js-utils": "^2.0.0",
+    "fast-loops": "^1.0.0",
+    "string-hash": "^1.1.3"
+  },
+  "devDependencies": {
+    "fela": "^6.1.8"
+  }
+}

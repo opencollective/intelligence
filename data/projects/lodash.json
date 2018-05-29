@@ -1,0 +1,17 @@
+{
+  "name": "lodash",
+  "packages": [
+    {
+      "name": "lodash",
+      "devDependencies": 23,
+      "dependencies": 56,
+      "score": 79
+    },
+    {
+      "name": "babel-plugin-lodash",
+      "devDependencies": 9,
+      "dependencies": 2,
+      "score": 11
+    }
+  ]
+}

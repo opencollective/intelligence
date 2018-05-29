@@ -1,0 +1,16 @@
+{
+  "name": "chai",
+  "packages": [
+    {
+      "name": "chai",
+      "devDependencies": 49,
+      "dependencies": 1,
+      "score": 50
+    }
+  ],
+  "opencollective": {
+    "id": 125,
+    "name": "chaijs",
+    "slug": "chaijs"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "name": "inferno-fela",
+  "version": "8.2.0",
+  "description": "Inferno bindings for Fela",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "jsnext:main": "es/index.js",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "lib/**",
+    "es/**"
+  ],
+  "repository": "https://github.com/rofrischmann/fela/",
+  "keywords": [
+    "fela",
+    "dynamic styling",
+    "inferno",
+    "css",
+    "styling",
+    "cssinjs"
+  ],
+  "author": "Robin Frischmann",
+  "license": "MIT",
+  "peerDependencies": {
+    "inferno": "^4.0.0",
+    "inferno-create-element": "^4.0.0"
+  },
+  "dependencies": {
+    "fela-bindings": "^2.3.0",
+    "fela-dom": "^7.0.8"
+  }
+}

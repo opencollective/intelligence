@@ -1,0 +1,11 @@
+{
+  "name": "handlebars",
+  "packages": [
+    {
+      "name": "handlebars",
+      "dependencies": 8,
+      "devDependencies": 4,
+      "score": 12
+    }
+  ]
+}

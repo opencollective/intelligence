@@ -1,0 +1,17 @@
+{
+  "name": "cheerio",
+  "packages": [
+    {
+      "name": "cheerio",
+      "devDependencies": 4,
+      "dependencies": 10,
+      "score": 14
+    }
+  ],
+  "opencollective": {
+    "id": 151,
+    "name": "cheerio",
+    "slug": "cheerio"
+  },
+  "score": 14
+}

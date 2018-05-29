@@ -1,0 +1,25 @@
+{
+  "name": "jsonmvc-helper-guid",
+  "description": "Generate a random global unique identifier (guid).",
+  "version": "0.3.6",
+  "main": "dist/jsonmvc-helper-guid.js",
+  "browser": "dist/jsonmvc-helper-guid.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jsonmvc/jsonmvc.git"
+  },
+  "keywords": [
+    "jsonmvc",
+    "module",
+    "guid",
+    "generator",
+    "random",
+    "development"
+  ],
+  "author": "Constantin Dumitrescu <dum.constantin@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jsonmvc/jsonmvc/issues"
+  },
+  "homepage": "https://github.com/jsonmvc/jsonmvc/packages/jsonmvc-helper-guid#readme"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "rimraf",
+  "slug": "rimraf",
+  "ignored": true,
+  "packages": [
+    {
+      "name": "rimraf",
+      "devDependencies": 57,
+      "dependencies": 11,
+      "score": 90
+    }
+  ]
+}

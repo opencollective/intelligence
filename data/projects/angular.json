@@ -1,0 +1,55 @@
+{
+  "name": "angular",
+  "packages": [
+    {
+      "name": "@angular/common",
+      "dependencies": 5,
+      "peerDependencies": 1,
+      "devDependencies": 5,
+      "score": 11
+    },
+    {
+      "name": "@angular/core",
+      "dependencies": 5,
+      "peerDependencies": 1,
+      "devDependencies": 5,
+      "score": 11
+    },
+    {
+      "name": "@angular/platform-browser-dynamic",
+      "dependencies": 5,
+      "devDependencies": 5,
+      "score": 10
+    },
+    {
+      "name": "@angular/compiler",
+      "dependencies": 5,
+      "devDependencies": 5,
+      "score": 10
+    },
+    {
+      "name": "@angular/platform-browser",
+      "dependencies": 5,
+      "devDependencies": 5,
+      "score": 10
+    },
+    {
+      "name": "@angular/forms",
+      "dependencies": 5,
+      "devDependencies": 4,
+      "score": 19
+    },
+    {
+      "name": "@angular/router",
+      "dependencies": 5,
+      "devDependencies": 3,
+      "score": 18
+    },
+    {
+      "name": "@angular/animations",
+      "dependencies": 5,
+      "devDependencies": 2,
+      "score": 17
+    }
+  ]
+}

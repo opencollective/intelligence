@@ -1,0 +1,15 @@
+{
+  "lerna": "2.9.0",
+  "version": "0.4.2",
+  "command": {
+    "bootstrap": {
+      "ignore": "warriorjs-website"
+    },
+    "publish": {
+      "allowBranch": "master",
+      "ignore": "warriorjs-website"
+    }
+  },
+  "npmClient": "yarn",
+  "useWorkspaces": true
+}

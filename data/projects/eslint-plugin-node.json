@@ -1,0 +1,11 @@
+{
+  "name": "eslint-plugin-node",
+  "slug": "eslint-plugin-node",
+  "packages": [
+    {
+      "name": "eslint-plugin-node",
+      "devDependencies": 18,
+      "score": 18
+    }
+  ]
+}

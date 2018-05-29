@@ -1,0 +1,11 @@
+{
+  "name": "ejs",
+  "packages": [
+    {
+      "name": "ejs",
+      "dependencies": 7,
+      "devDependencies": 5,
+      "score": 12
+    }
+  ]
+}

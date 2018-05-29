@@ -1,0 +1,12 @@
+{
+  "name": "node-classnames",
+  "slug": "node-classnames",
+  "packages": [
+    {
+      "name": "classnames",
+      "dependencies": 14,
+      "devDependencies": 5,
+      "score": 47
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "highlight.js",
+  "packages": [
+    {
+      "name": "highlight.js",
+      "dependencies": 11,
+      "devDependencies": 4,
+      "score": 15
+    }
+  ]
+}

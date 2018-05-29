@@ -1,0 +1,11 @@
+{
+  "name": "query-string",
+  "slug": "query-string",
+  "packages": [
+    {
+      "name": "query-string",
+      "dependencies": 10,
+      "score": 30
+    }
+  ]
+}

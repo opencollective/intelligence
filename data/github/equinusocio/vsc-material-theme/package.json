@@ -1,0 +1,241 @@
+{
+  "name": "vsc-material-theme",
+  "displayName": "Material Theme",
+  "description": "The most epic theme now for Visual Studio Code",
+  "version": "2.1.0",
+  "publisher": "Equinusocio",
+  "license": "Apache-2.0",
+  "author": "Mattia Astorino [@equinusocio]",
+  "icon": "logo.png",
+  "galleryBanner": {
+    "color": "#11131C",
+    "theme": "dark"
+  },
+  "homepage": "https://equinsuocha.io/projects/material-theme/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/equinusocio/vsc-material-theme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/equinusocio/vsc-material-theme/issues"
+  },
+  "engines": {
+    "vscode": "^1.19.0"
+  },
+  "standard-version": {
+    "scripts": {
+      "postchangelog": "yarn gulp changelog-title"
+    }
+  },
+  "scripts": {
+    "build": "yarn get-remote-icons && yarn build-icons && yarn build-themes && yarn build-icons-accents && yarn build-icons-variants && yarn build-icons-variants-json",
+    "minimize-icons": "mkdir icons && svgo -f src/icons/svgs -o icons/",
+    "minimize-json": "json-minify themes/.material-theme-icons.tmp > themes/Material-Theme-Icons.json && yarn remove-icons-tmp",
+    "remove-icons": "rimraf icons && rimraf themes/Material-Theme-Icons.json",
+    "remove-icons-tmp": "rimraf themes/.material-theme-icons.tmp",
+    "get-remote-icons": "yarn gulp build:get-remote-icons",
+    "build-icons": "yarn remove-icons && yarn minimize-icons && yarn gulp build:icons && yarn minimize-json",
+    "build-icons-accents": "yarn gulp build:icons.accents",
+    "build-icons-variants": "yarn gulp build:icons.variants",
+    "build-icons-variants-json": "yarn gulp build:icons.variants-json",
+    "build-themes": "yarn gulp build:themes",
+    "build-ts": "tsc -p ./tsconfig.json",
+    "test": "tslint **.ts",
+    "release": "standard-version",
+    "postinstall": "node ./node_modules/vscode/bin/install && opencollective postinstall && tsc -p tsconfig.json"
+  },
+  "categories": [
+    "Themes",
+    "Other"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./extensions/material.theme.config.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "materialTheme.toggleApplyIcons",
+        "title": "Enable or disable icons auto-applying",
+        "category": "🎨 Material Theme"
+      },
+      {
+        "command": "materialTheme.setAccent",
+        "title": "Set accent color",
+        "category": "🎨 Material Theme"
+      },
+      {
+        "command": "materialTheme.fixIcons",
+        "title": "Fix file icons",
+        "category": "🎨 Material Theme"
+      },
+      {
+        "command": "materialTheme.showChangelog",
+        "title": "Show changelog",
+        "category": "🎨 Material Theme"
+      }
+    ],
+    "configuration": {
+      "type": "object",
+      "title": "Material Theme configuration",
+      "properties": {
+        "materialTheme.accent": {
+          "type": "string",
+          "description": "Current accent color selected"
+        },
+        "materialTheme.accentPrevious": {
+          "type": "string",
+          "description": "Previous accent color selected"
+        },
+        "materialTheme.autoApplyIcons": {
+          "type": "boolean",
+          "description": "Enable/disable auto-apply of Material Theme icons",
+          "default": true
+        },
+        "materialTheme.fixIconsRunning": {
+          "type": "boolean",
+          "description": "For checking if the command is currently acting",
+          "default": false
+        }
+      }
+    },
+    "themes": [
+      {
+        "label": "Material Theme",
+        "path": "./themes/Material-Theme-Default.json",
+        "uiTheme": "vs-dark"
+      },
+      {
+        "label": "Material Theme High Contrast",
+        "path": "./themes/Material-Theme-Default-High-Contrast.json",
+        "uiTheme": "vs-dark"
+      },
+      {
+        "label": "Material Theme Darker",
+        "path": "./themes/Material-Theme-Darker.json",
+        "uiTheme": "vs-dark"
+      },
+      {
+        "label": "Material Theme Darker High Contrast",
+        "path": "./themes/Material-Theme-Darker-High-Contrast.json",
+        "uiTheme": "vs-dark"
+      },
+      {
+        "label": "Material Theme Palenight",
+        "path": "./themes/Material-Theme-Palenight.json",
+        "uiTheme": "vs-dark"
+      },
+      {
+        "label": "Material Theme Palenight High Contrast",
+        "path": "./themes/Material-Theme-Palenight-High-Contrast.json",
+        "uiTheme": "vs-dark"
+      },
+      {
+        "label": "Material Theme Ocean",
+        "path": "./themes/Material-Theme-Ocean.json",
+        "uiTheme": "vs-dark"
+      },
+      {
+        "label": "Material Theme Ocean High Contrast",
+        "path": "./themes/Material-Theme-Ocean-High-Contrast.json",
+        "uiTheme": "vs-dark"
+      },
+      {
+        "label": "Material Theme Lighter",
+        "path": "./themes/Material-Theme-Lighter.json",
+        "uiTheme": "vs"
+      },
+      {
+        "label": "Material Theme Lighter High Contrast",
+        "path": "./themes/Material-Theme-Lighter-High-Contrast.json",
+        "uiTheme": "vs"
+      }
+    ],
+    "iconThemes": [
+      {
+        "id": "eq-material-theme-icons",
+        "label": "Material Theme Icons",
+        "path": "./themes/Material-Theme-Icons.json"
+      },
+      {
+        "id": "eq-material-theme-icons-darker",
+        "label": "Material Theme Icons Darker",
+        "path": "./themes/Material-Theme-Icons-Darker.json"
+      },
+      {
+        "id": "eq-material-theme-icons-palenight",
+        "label": "Material Theme Icons Palenight",
+        "path": "./themes/Material-Theme-Icons-Palenight.json"
+      },
+      {
+        "id": "eq-material-theme-icons-ocean",
+        "label": "Material Theme Icons Ocean",
+        "path": "./themes/Material-Theme-Icons-Ocean.json"
+      },
+      {
+        "id": "eq-material-theme-icons-light",
+        "label": "Material Theme Icons Light",
+        "path": "./themes/Material-Theme-Icons-Light.json"
+      }
+    ]
+  },
+  "badges": [
+    {
+      "url": "https://camo.githubusercontent.com/d3c6e53aa66426dead24cdedab0e83082103bea6/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6973737565732f657175696e75736f63696f2f7673632d6d6174657269616c2d7468656d652e7376673f7374796c653d666c61742d737175617265",
+      "href": "https://github.com/equinusocio/vsc-material-theme/issues",
+      "description": "Open issues"
+    }
+  ],
+  "devDependencies": {
+    "@types/chalk": "2.2.0",
+    "@types/execa": "0.9.0",
+    "@types/gulp": "4.0.5",
+    "@types/gulp-if": "0.0.33",
+    "@types/gulp-util": "3.0.34",
+    "@types/mustache": "0.8.30",
+    "@types/ncp": "2.0.1",
+    "@types/rimraf": "2.0.2",
+    "@types/run-sequence": "0.0.30",
+    "@types/through2": "2.0.33",
+    "@types/yamljs": "0.2.30",
+    "@types/yargs": "10.0.1",
+    "babel-core": "6.26.0",
+    "babel-preset-es2015": "6.24.1",
+    "babel-root-import": "4.1.8",
+    "cpx": "1.5.0",
+    "execa": "0.10.0",
+    "gulp": "3.9.1",
+    "gulp-bump": "3.1.0",
+    "gulp-conventional-changelog": "1.1.11",
+    "gulp-if": "2.0.2",
+    "gulp-stats": "0.0.4",
+    "gulp-util": "3.0.8",
+    "hoek": "5.0.3",
+    "json-minify": "1.0.0",
+    "mustache": "2.3.0",
+    "ncp": "2.0.0",
+    "rimraf": "2.6.2",
+    "run-sequence": "2.2.1",
+    "standard-version": "4.3.0",
+    "svgo": "1.0.4",
+    "tslint": "5.9.1",
+    "tslint-xo": "0.7.2",
+    "typescript": "2.8.3",
+    "vscode": "1.1.10",
+    "yamljs": "0.3.0",
+    "yargs": "11.0.0"
+  },
+  "__metadata": {
+    "id": "dffaf5a1-2219-434b-9d87-cb586fd59260",
+    "publisherDisplayName": "Mattia Astorino",
+    "publisherId": "e41388a1-a892-4c1e-940b-1e7c1bf43c97"
+  },
+  "dependencies": {
+    "opencollective": "1.0.3"
+  },
+  "collective": {
+    "type": "opencollective",
+    "url": "https://opencollective.com/vsc-material-theme",
+    "logo": "https://opencollective.com/opencollective/logo.txt"
+  }
+}

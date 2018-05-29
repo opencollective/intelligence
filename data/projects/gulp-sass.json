@@ -1,0 +1,13 @@
+{
+  "name": "gulp-sass",
+  "slug": "gulp-sass",
+  "ignored": true,
+  "packages": [
+    {
+      "name": "gulp-sass",
+      "devDependencies": 17,
+      "dependencies": 2,
+      "score": 23
+    }
+  ]
+}

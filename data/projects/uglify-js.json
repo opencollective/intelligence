@@ -1,0 +1,12 @@
+{
+  "name": "uglify-js",
+  "slug": "uglify-js",
+  "packages": [
+    {
+      "name": "uglify-js",
+      "devDependencies": 26,
+      "dependencies": 1,
+      "score": 29
+    }
+  ]
+}

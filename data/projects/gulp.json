@@ -1,0 +1,22 @@
+{
+  "name": "gulp",
+  "packages": [
+    {
+      "name": "gulp",
+      "devDependencies": 42,
+      "dependencies": 8,
+      "score": 50
+    },
+    {
+      "name": "gulp-util",
+      "devDependencies": 13,
+      "dependencies": 3,
+      "score": 16
+    }
+  ],
+  "opencollective": {
+    "id": 85,
+    "name": "GulpJS",
+    "slug": "gulpjs"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "jsonmvc",
+  "description": "The JSONMVC Framework",
+  "version": "0.3.28",
+  "main": "dist/jsonmvc.js",
+  "browser": "dist/jsonmvc.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jsonmvc/jsonmvc.git"
+  },
+  "keywords": [
+    "jsonmvc",
+    "framework",
+    "prototyping",
+    "json",
+    "mvc",
+    "architecture",
+    "data",
+    "development"
+  ],
+  "author": "Constantin Dumitrescu <dum.constantin@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jsonmvc/jsonmvc/issues"
+  },
+  "homepage": "https://github.com/jsonmvc/jsonmvc/packages/jsonmvc#readme",
+  "dependencies": {
+    "jsonmvc-datastore": "^0.3.28",
+    "jsonmvc-helper-guid": "^0.3.6",
+    "lodash-es": "^4.17.4",
+    "most": "^1.6.1",
+    "vue": "^2.4.2",
+    "zen-observable": "^0.5.2"
+  }
+}

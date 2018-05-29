@@ -1,0 +1,34 @@
+{
+  "name": "react-native-responsive-grid",
+  "version": "0.41.992",
+  "description": "Responsive grid for React Native based on react-native-flexbox-grid",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/idibidiart/react-native-responsive-grid.git"
+  },
+  "keywords": [
+    "react-native",
+    "react",
+    "native",
+    "flexbox",
+    "grid"
+  ],
+  "author": "Multiple, see License",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/idibidiart/react-native-responsive-grid/issues"
+  },
+  "homepage": "https://github.com/idibidiart/react-native-responsive-grid#readme",
+  "dependencies": {
+    "opencollective": "^1.0.3"
+  },
+  "collective": {
+    "type": "opencollective",
+    "url": "https://opencollective.com/react-native-responsive-grid",
+    "logo": "https://opencollective.com/opencollective/logo.txt"
+  },
+  "scripts": {
+    "postinstall": "opencollective postinstall"
+  }
+}

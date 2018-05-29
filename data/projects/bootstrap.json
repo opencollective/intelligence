@@ -1,0 +1,17 @@
+{
+  "name": "bootstrap",
+  "packages": [
+    {
+      "name": "bootstrap",
+      "dependencies": 12,
+      "devDependencies": 2,
+      "score": 14
+    },
+    {
+      "name": "bootstrap-sass",
+      "devDependencies": 7,
+      "dependencies": 4,
+      "score": 11
+    }
+  ]
+}

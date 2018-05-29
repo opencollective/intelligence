@@ -1,0 +1,13 @@
+{
+  "name": "gulp-sourcemaps",
+  "slug": "gulp-sourcemaps",
+  "ignored": true,
+  "packages": [
+    {
+      "name": "gulp-sourcemaps",
+      "devDependencies": 19,
+      "dependencies": 5,
+      "score": 34
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "flow",
+  "packages": [
+    {
+      "name": "flow-bin",
+      "devDependencies": 34,
+      "dependencies": 2,
+      "score": 36
+    }
+  ]
+}

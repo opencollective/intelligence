@@ -1,0 +1,17 @@
+{
+  "name": "socket.io",
+  "packages": [
+    {
+      "name": "socket.io",
+      "dependencies": 12,
+      "devDependencies": 1,
+      "score": 13
+    }
+  ],
+  "opencollective": {
+    "id": 659,
+    "name": "socket.io",
+    "slug": "socketio"
+  },
+  "score": 13
+}

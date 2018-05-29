@@ -1,0 +1,11 @@
+{
+  "name": "font-awesome",
+  "packages": [
+    {
+      "name": "font-awesome",
+      "devDependencies": 3,
+      "dependencies": 13,
+      "score": 16
+    }
+  ]
+}

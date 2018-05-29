@@ -1,0 +1,34 @@
+{
+  "name": "jsonmvc-datastore",
+  "description": "The jsonmvc data library",
+  "main": "dist/jsonmvc-datastore.js",
+  "browser": "dist/jsonmvc-datastore.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jsonmvc/jsonmvc.git"
+  },
+  "keywords": [
+    "json",
+    "data",
+    "schema",
+    "dynamic",
+    "immutable",
+    "jsonmvc",
+    "mvc",
+    "framework",
+    "functional",
+    "architecture"
+  ],
+  "author": "Constantin Dumitrescu <dum.constantin@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jsonmvc/jsonmvc/issues"
+  },
+  "homepage": "https://github.com/jsonmvc/jsonmvc/packages/jsonmvc-datastore#readme",
+  "dependencies": {
+    "lodash-es": "^4.17.4",
+    "setimmediate": "^1.0.5",
+    "uniq": "^1.0.1"
+  },
+  "version": "0.3.28"
+}

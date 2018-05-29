@@ -1,0 +1,124 @@
+<img src="http://cdn.trailsjs.io/art/logos/trails-horiz-logo-green.svg" height="96px" title="Trails Logo" />
+
+[![Gitter][gitter-image]][gitter-url]
+[![NPM version][npm-image]][npm-url]
+[![Linux + OSX Build Status][ci-image]][ci-url]
+[![Windows Build Status][appveyor-image]][appveyor-url]
+[![Test Coverage][coverage-image]][coverage-url]
+[![Follow @trailsjs on Twitter][twitter-image]][twitter-url]
+
+Trails is a modern, [community-driven](https://opencollective.com/trails) web application framework for Node.js. It
+builds on the pedigree of [Rails](http://rubyonrails.org/) and [Grails](https://grails.org/)
+to accelerate development by adhering to a straightforward, convention-based,
+API-driven design philosophy.
+
+## Getting Started
+
+#### Install
+
+```sh
+$ npm install -g yo generator-trails
+$ yo trails
+```
+
+#### Trailblaze
+
+Trails uses [Yeoman](http://yeoman.io/) to generate scaffolding for new
+applications, and to create resources inside the application.
+
+```sh
+$ yo trails --help
+
+Usage:
+  yo trails
+
+Generators:
+
+  Create New Model
+    yo trails:model <model-name>
+
+  Create New Controller
+    yo trails:controller <controller-name>
+
+  Create New Policy
+    yo trails:policy <policy-name>
+
+  Create New Service
+    yo trails:service <service-name>
+```
+
+#### Run
+
+Once installation is complete, begin your journey!
+```sh
+$ node server.js
+```
+
+#### Happy Trails!
+
+## Trailpacks
+
+[Trailpacks](https://github.com/trailsjs/trailpack) extend the framework's
+capabilities and allow developers to leverage existing ecosystem tools through a
+simple and well-defined API. New features, behavior, APIs, and other functionality
+can be added to the Trails framework through Trailpacks.
+
+Many Trails installations will include some of the following Trailpacks:
+
+- [router](https://github.com/trailsjs/trailpack-router)
+- [repl](https://github.com/trailsjs/trailpack-repl)
+- [hapi](https://github.com/trailsjs/trailpack-hapi)
+- [express](https://github.com/trailsjs/trailpack-express)
+- [waterline](https://github.com/trailsjs/trailpack-waterline)
+- [knex](https://github.com/trailsjs/trailpack-knex)
+
+## Compatibility
+
+- Windows, Mac, and Linux
+- Node 7.0 and newer
+
+## Documentation
+
+See [**trailsjs.io/doc**](http://trailsjs.io/doc) for complete documentation.
+
+## More Resources
+
+#### Tutorials
+- [Getting Started](http://blog.jaumard.com/en/2016/01/05/getting-started-with-trails/)
+- [Create a Custom Trailpack](http://blog.jaumard.com/en/2016/01/06/create-a-trailpack-for-trails/)
+- [Trails and Angular](https://cali-style.com/blog/trails-js-and-angular)
+
+#### Videos
+- [Getting Started with Trails.js](https://www.youtube.com/watch?v=AbSp8jqFDAY)
+
+#### Support
+- [Live Gitter Chat](https://gitter.im/trailsjs/trails)
+- [Twitter](https://twitter.com/trailsjs)
+- [Trails.js Website](http://trailsjs.io/support)
+- [Stackoverflow](http://stackoverflow.com/questions/tagged/trailsjs)
+
+## FAQ
+
+See https://github.com/trailsjs/trails/wiki/FAQ
+
+## Contributing
+We love contributions! Please check out our [Contributor's Guide](https://github.com/trailsjs/trails/blob/master/.github/CONTRIBUTING.md) for more
+information on how our projects are organized and how to get started.
+
+## License
+[MIT](https://github.com/trailsjs/trails/blob/master/LICENSE)
+
+<img src="http://cdn.trailsjs.io/art/backgrounds/trails-day.png">
+
+[npm-image]: https://img.shields.io/npm/v/trails.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/trails
+[ci-image]: https://img.shields.io/travis/trailsjs/trails.svg?style=flat-square&label=Linux%20/%20OSX
+[ci-url]: https://travis-ci.org/trailsjs/trails
+[appveyor-image]: https://img.shields.io/appveyor/ci/trailsjs/trails/master.svg?style=flat-square&label=Windows
+[appveyor-url]: https://ci.appveyor.com/project/trailsjs/trails
+[gitter-image]: http://img.shields.io/badge/+%20GITTER-JOIN%20CHAT%20%E2%86%92-1DCE73.svg?style=flat-square
+[gitter-url]: https://gitter.im/trailsjs/trails
+[twitter-image]: https://img.shields.io/twitter/follow/trailsjs.svg?style=social
+[twitter-url]: https://twitter.com/trailsjs
+[coverage-image]: https://img.shields.io/codeclimate/coverage/github/trailsjs/trails.svg?style=flat-square
+[coverage-url]: https://codeclimate.com/github/trailsjs/trails/coverage

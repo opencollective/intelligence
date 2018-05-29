@@ -1,0 +1,13 @@
+{
+  "name": "gulp-rename",
+  "slug": "gulp-rename",
+  "ignored": true,
+  "packages": [
+    {
+      "name": "gulp-rename",
+      "devDependencies": 25,
+      "dependencies": 3,
+      "score": 34
+    }
+  ]
+}

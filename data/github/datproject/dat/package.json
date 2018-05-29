@@ -1,0 +1,89 @@
+{
+  "name": "dat",
+  "version": "13.10.0",
+  "description": "Dat is the package manager for data. Easily share and version control data.",
+  "keywords": [
+    "dat",
+    "hyperdrive",
+    "decentralized",
+    "file sharing"
+  ],
+  "main": "index.js",
+  "bin": {
+    "dat": "bin/cli.js"
+  },
+  "scripts": {
+    "auth-server": "DEBUG=* node scripts/auth-server.js",
+    "install-precommit": "echo ./node_modules/.bin/standard > .git/hooks/pre-commit && chmod +x .git/hooks/pre-commit",
+    "standard": "standard",
+    "deps": "dependency-check . && dependency-check . --extra --no-dev",
+    "test": "standard && npm run deps && tape 'test/*.js'",
+    "test-only": "tape 'test/*.js'",
+    "package": "rm -rf builds && npm run pkg && ./package.sh",
+    "pkg": "pkg package.json -o builds/dat"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/datproject/dat.git"
+  },
+  "author": "max ogden",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/datproject/dat/issues"
+  },
+  "homepage": "https://datproject.org",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "bytes": "^3.0.0",
+    "chalk": "^2.0.0",
+    "cli-truncate": "^1.0.0",
+    "dat-doctor": "^1.2.5",
+    "dat-encoding": "^5.0.1",
+    "dat-json": "^1.0.0",
+    "dat-link-resolve": "^2.1.0",
+    "dat-log": "^1.1.0",
+    "dat-node": "^3.5.5",
+    "dat-registry": "^4.0.0",
+    "debug": "^3.0.0",
+    "neat-log": "^1.1.0",
+    "prettier-bytes": "^1.0.3",
+    "progress-string": "^1.2.1",
+    "prompt": "^1.0.0",
+    "pump": "^2.0.0",
+    "rimraf": "^2.6.1",
+    "speedometer": "^1.0.0",
+    "subcommand": "^2.1.0",
+    "throttle": "^1.0.3",
+    "update-notifier": "^2.3.0",
+    "xtend": "^4.0.1"
+  },
+  "devDependencies": {
+    "cross-zip-cli": "^1.0.0",
+    "dependency-check": "^3.0.0",
+    "hypercore": "^6.12.0",
+    "hyperdiscovery": "^7.0.0",
+    "mkdirp": "^0.5.1",
+    "pkg": "^4.2.6",
+    "random-access-memory": "^2.4.0",
+    "recursive-readdir-sync": "^1.0.6",
+    "request": "^2.81.0",
+    "standard": "^11.0.1",
+    "tape": "^4.6.3",
+    "tape-spawn": "^1.4.2",
+    "temporary-directory": "^1.0.2"
+  },
+  "pkg": {
+    "assets": [
+      "./node_modules/utp-native/prebuilds/**",
+      "./node_modules/blake2b-wasm/blake2b.wasm",
+      "./node_modules/siphash24/siphash24.wasm"
+    ],
+    "targets": [
+      "node8-linux-x64",
+      "node8-macos-x64",
+      "node8-win-x64"
+    ]
+  }
+}

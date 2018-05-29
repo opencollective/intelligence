@@ -1,0 +1,13 @@
+{
+  "name": "jquery",
+  "slug": "jquery",
+  "packages": [
+    {
+      "name": "jquery",
+      "dependencies": 19,
+      "devDependencies": 15,
+      "peerDependencies": 2,
+      "score": 74
+    }
+  ]
+}

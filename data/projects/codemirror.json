@@ -1,0 +1,11 @@
+{
+  "name": "codemirror",
+  "packages": [
+    {
+      "name": "codemirror",
+      "devDependencies": 4,
+      "dependencies": 9,
+      "score": 13
+    }
+  ]
+}

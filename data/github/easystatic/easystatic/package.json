@@ -1,0 +1,97 @@
+{
+  "name": "easystatic",
+  "version": "0.1.12",
+  "description": "A simple static site generator that uses Markdown It for web pages, PostCSS and EJS for layout, Browsersync for cross-device testing..",
+  "homepage": "https://easystatic.com",
+  "author": "Konstantin Tarkus <hello@tarkus.me> (http://tarkus.me/)",
+  "repository": "easystatic/easystatic",
+  "license": "Apache-2.0",
+  "keywords": [
+    "static",
+    "site",
+    "static site",
+    "website",
+    "blog",
+    "boilerplate",
+    "generator",
+    "static site generator",
+    "github pages",
+    "compile",
+    "compiler",
+    "build",
+    "builder",
+    "documentation",
+    "docs",
+    "markdown",
+    "browsersync",
+    "web development",
+    "postcss"
+  ],
+  "bin": {
+    "es": "./bin/easystatic.js",
+    "easystatic": "./bin/easystatic.js"
+  },
+  "files": [
+    "bin",
+    "lib",
+    "template"
+  ],
+  "engines": ">= 5.0",
+  "babel": {
+    "presets": [
+      "node5",
+      "stage-0"
+    ]
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "extends": "airbnb/base"
+  },
+  "dependencies": {
+    "autoprefixer": "^6.3.3",
+    "babel-polyfill": "^6.7.4",
+    "browser-sync": "^2.11.1",
+    "bs-html-injector": "^3.0.0",
+    "cp-file": "^3.1.0",
+    "cssnano": "^3.5.2",
+    "debug": "^2.2.0",
+    "ejs": "^2.4.1",
+    "front-matter": "^2.0.6",
+    "git-repository": "^0.1.4",
+    "globby": "^4.0.0",
+    "markdown-it": "^6.0.0",
+    "minimist": "^1.2.0",
+    "mkdirp": "^0.5.1",
+    "pixrem": "^3.0.0",
+    "pleeease-filters": "^2.0.0",
+    "postcss": "^5.0.19",
+    "postcss-calc": "^5.2.0",
+    "postcss-color-function": "^2.0.1",
+    "postcss-custom-properties": "^5.0.0",
+    "postcss-import": "^8.0.2",
+    "postcss-pseudoelements": "^3.0.0",
+    "postcss-selector-not": "^2.0.0",
+    "rimraf": "^2.5.2",
+    "update-notifier": "^0.6.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.6.5",
+    "babel-eslint": "^5.0.0",
+    "babel-preset-node5": "^11.0.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "eslint": "^2.4.0",
+    "eslint-config-airbnb": "^6.1.0",
+    "rimraf": "^2.5.2"
+  },
+  "scripts": {
+    "lint": "eslint src",
+    "test": "eslint src",
+    "start": "babel-node ./src/easystatic.js start docs",
+    "start:demo": "babel-node ./src/easystatic.js start demo",
+    "build": "rimraf lib && babel src --out-dir lib",
+    "build:docs": "babel-node ./src/easystatic.js build docs",
+    "build:demo": "babel-node ./src/easystatic.js build demo",
+    "prepublish": "rimraf lib && babel src --out-dir lib",
+    "publish:docs": "babel-node ./src/easystatic.js deploy docs --repo=easystatic/easystatic.github.io --domain=easystatic.com"
+  }
+}

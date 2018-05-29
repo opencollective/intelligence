@@ -1,0 +1,63 @@
+{
+  "name": "nwitter",
+  "description": "A twitter clone written with Node.js, Express, and MongoDB",
+  "version": "2.1.0",
+  "repository": "https://github.com/vinitkumar/node-twitter",
+  "private": false,
+  "author": "Vinit Kumar <vinit1414.08@bitmesra.ac.in> (http://vinitkumar.me)",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "make test",
+    "postinstall": "opencollective postinstall"
+  },
+  "engines": {
+    "node": "10.0.0",
+    "npm": "6.0.0"
+  },
+  "dependencies": {
+    "async": "latest",
+    "body-parser": "^1.18.1",
+    "compression": "^1.7.1",
+    "connect-flash": "latest",
+    "connect-mongo": "latest",
+    "cookie-parser": "^1.4.3",
+    "errorhandler": "^1.5.0",
+    "eslint": "^4.15.0",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "forever": "latest",
+    "method-override": "^2.3.10",
+    "moment": "^2.20.1",
+    "mongoose": "^4.13.9",
+    "morgan": "^1.9.0",
+    "opencollective": "^1.0.3",
+    "passport": "^0.3.2",
+    "passport-github": "latest",
+    "passport-github2": "^0.1.9",
+    "passport-google-oauth": "latest",
+    "passport-local": "latest",
+    "passport-twitter": "~1.0.2",
+    "pug": "^2.0.0-rc.4",
+    "raven": "^2.1.2",
+    "serve-favicon": "^2.4.5",
+    "underscore": "latest",
+    "view-helpers": "latest",
+    "winston": "^2.4.0"
+  },
+  "devDependencies": {
+    "ava": "latest",
+    "grunt": "latest",
+    "grunt-contrib-sass": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-sass": "latest",
+    "mocha": "latest",
+    "nodemon": "latest",
+    "should": "latest",
+    "supertest": "^3.0.0"
+  },
+  "collective": {
+    "type": "opencollective",
+    "url": "https://opencollective.com/node-twitter",
+    "logo": "https://opencollective.com/node-twitter/logo.txt"
+  }
+}

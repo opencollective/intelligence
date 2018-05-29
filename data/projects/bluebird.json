@@ -1,0 +1,11 @@
+{
+  "name": "bluebird",
+  "packages": [
+    {
+      "name": "bluebird",
+      "dependencies": 13,
+      "devDependencies": 2,
+      "score": 15
+    }
+  ]
+}

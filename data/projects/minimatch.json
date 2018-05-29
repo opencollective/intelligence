@@ -1,0 +1,13 @@
+{
+  "name": "minimatch",
+  "slug": "minimatch",
+  "ignored": true,
+  "packages": [
+    {
+      "name": "minimatch",
+      "dependencies": 7,
+      "devDependencies": 1,
+      "score": 22
+    }
+  ]
+}

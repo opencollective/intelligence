@@ -1,0 +1,12 @@
+{
+  "name": "dotenv",
+  "slug": "dotenv",
+  "packages": [
+    {
+      "name": "dotenv",
+      "dependencies": 6,
+      "devDependencies": 4,
+      "score": 22
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "name": "jsonmvc-module-framework7",
+  "description": "A JSONMVC module for Framework7 integration",
+  "main": "dist/jsonmvc-module-framework7.js",
+  "browser": "dist/jsonmvc-module-framework7.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jsonmvc/jsonmvc.git"
+  },
+  "keywords": [
+    "jsonmvc",
+    "module",
+    "framework7",
+    "ui",
+    "mobile",
+    "development"
+  ],
+  "author": "Constantin Dumitrescu <dum.constantin@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jsonmvc/jsonmvc/issues"
+  },
+  "homepage": "https://github.com/jsonmvc/jsonmvc/packages/jsonmvc-module-framework7#readme",
+  "dependencies": {
+    "framework7": "^1.6.4",
+    "jsonmvc-helper-observer": "^0.3.6",
+    "jsonmvc-helper-stream": "^0.3.6",
+    "lodash-es": "^4.17.4"
+  },
+  "version": "0.3.6"
+}

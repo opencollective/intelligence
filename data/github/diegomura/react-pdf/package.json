@@ -1,0 +1,54 @@
+{
+  "private": true,
+  "license": "MIT",
+  "author": "Diego Muracciole <diegomuracciole@gmail.com>",
+  "homepage": "https://github.com/diegomura/react-pdf#readme",
+  "repository": "git@github.com:diegomura/react-pdf.git",
+  "collective": {
+    "type": "opencollective",
+    "url": "https://opencollective.com/react-pdf",
+    "logo": "https://opencollective.com/opencollective/logo.txt"
+  },
+  "dependencies": {
+    "jest": "^20.0.4",
+    "lerna": "2.7.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-eslint": "^7.2.3",
+    "babel-jest": "^20.0.3",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-register": "^6.24.1",
+    "eslint": "^3.19.0",
+    "eslint-config-prettier": "^2.1.0",
+    "eslint-plugin-jest": "^20.0.3",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-react": "^7.0.1",
+    "husky": "^0.13.2",
+    "lint-staged": "^3.4.2",
+    "mockdate": "^2.0.1",
+    "prettier": "^1.6.1"
+  },
+  "scripts": {
+    "build": "yarn run build:clean && lerna run build --ignore @react-pdf/example-*",
+    "build:watch": "lerna run build:watch --concurrency=1000 --stream --ignore @react-pdf/examples",
+    "build:clean": "lerna run build:clean",
+    "prepublish": "yarn run build",
+    "postinstall": "lerna bootstrap",
+    "example": "babel-node ./examples/index.js",
+    "precommit": "git add . && lint-staged",
+    "lint": "eslint performance src",
+    "test": "jest --config .jestrc"
+  },
+  "lint-staged": {
+    "*.js": [
+      "yarn run lint",
+      "prettier --write",
+      "git add"
+    ]
+  }
+}

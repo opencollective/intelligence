@@ -1,0 +1,12 @@
+{
+  "name": "superagent",
+  "slug": "superagent",
+  "packages": [
+    {
+      "name": "superagent",
+      "dependencies": 8,
+      "devDependencies": 4,
+      "score": 28
+    }
+  ]
+}

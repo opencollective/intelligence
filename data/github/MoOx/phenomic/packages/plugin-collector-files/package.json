@@ -1,0 +1,35 @@
+{
+  "name": "@phenomic/plugin-collector-files",
+  "version": "1.0.0-beta.3",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": "https://github.com/phenomic/phenomic.git",
+  "homepage": "https://phenomic.io",
+  "license": "MIT",
+  "authors": ["Maxime Thirouin (MoOx)", "bloodyowl <bloodyowl@icloud.com>"],
+  "keywords": [
+    "static",
+    "website",
+    "generator",
+    "compiler",
+    "phenomic",
+    "phenomic-plugin",
+    "phenomic-plugin-collector",
+    "collector",
+    "files",
+    "fs"
+  ],
+  "description": "Phenomic plugin to collect resources from files",
+  "main": "lib/index.js",
+  "files": ["lib", "src", "!**/__tests__"],
+  "dependencies": {
+    "debug": "^2.6.0"
+  },
+  "peerDependencies": {
+    "@phenomic/core": "^1.0.0-beta.3"
+  },
+  "devDependencies": {
+    "@phenomic/core": "^1.0.0-beta.3"
+  }
+}

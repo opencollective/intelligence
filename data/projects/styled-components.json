@@ -1,0 +1,18 @@
+{
+  "name": "styled-components",
+  "packages": [
+    {
+      "name": "styled-components",
+      "dependencies": 8,
+      "devDependencies": 4,
+      "peerDependencies": 1,
+      "score": 13
+    }
+  ],
+  "opencollective": {
+    "id": 12353,
+    "name": "styled-components",
+    "slug": "styled-components"
+  },
+  "score": 13
+}

@@ -1,0 +1,33 @@
+{
+  "name": "react-fela",
+  "version": "7.3.0",
+  "description": "React bindings for Fela",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "jsnext:main": "es/index.js",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "lib/**",
+    "es/**"
+  ],
+  "repository": "https://github.com/rofrischmann/fela/",
+  "keywords": [
+    "fela",
+    "dynamic styling",
+    "react",
+    "css",
+    "styling",
+    "cssinjs"
+  ],
+  "author": "Robin Frischmann",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "*"
+  },
+  "dependencies": {
+    "fela-bindings": "^2.3.0",
+    "fela-dom": "^7.0.8",
+    "prop-types": "^15.5.8"
+  }
+}

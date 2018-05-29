@@ -1,0 +1,28 @@
+{
+  "name": "jsonmvc-module-time",
+  "description": "A JSONMVC module for app time management",
+  "version": "0.3.6",
+  "main": "dist/jsonmvc-module-time.js",
+  "browser": "dist/jsonmvc-module-time.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jsonmvc/jsonmvc.git"
+  },
+  "keywords": [
+    "jsonmvc",
+    "module",
+    "time",
+    "development"
+  ],
+  "author": "Constantin Dumitrescu <dum.constantin@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jsonmvc/jsonmvc/issues"
+  },
+  "homepage": "https://github.com/jsonmvc/jsonmvc/packages/jsonmvc-module-time#readme",
+  "dependencies": {
+    "jsonmvc-helper-observer": "^0.3.6",
+    "jsonmvc-helper-stream": "^0.3.6",
+    "most": "^1.6.1"
+  }
+}

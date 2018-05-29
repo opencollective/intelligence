@@ -1,0 +1,48 @@
+{
+  "name": "@phenomic/plugin-bundler-webpack",
+  "version": "1.0.0-beta.3",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": "https://github.com/phenomic/phenomic.git",
+  "homepage": "https://phenomic.io",
+  "license": "MIT",
+  "authors": ["Maxime Thirouin (MoOx)", "bloodyowl <bloodyowl@icloud.com>"],
+  "keywords": [
+    "static",
+    "website",
+    "generator",
+    "compiler",
+    "phenomic",
+    "phenomic-plugin",
+    "phenomic-plugin-renderer",
+    "renderer",
+    "react"
+  ],
+  "description":
+    "Phenomic plugin that allow you to use webpack to bundle you website/app",
+  "main": "lib/index.js",
+  "files": ["lib", "src", "!**/__tests__"],
+  "dependencies": {
+    "@phenomic/babel-preset": "^1.0.0-beta.3",
+    "babel-loader": "^7.0.0",
+    "chalk": "^1.1.3",
+    "css-loader": "^0.28.0",
+    "debug": "^2.6.0",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "find-cache-dir": "^0.1.1",
+    "multili": "^1.1.0",
+    "react-hot-loader": "^3.0.0-beta.7",
+    "source-map-support": "^0.4.0",
+    "style-loader": "^0.16.1",
+    "webpack": "^3.0.0",
+    "webpack-dev-middleware": "^1.10.0",
+    "webpack-hot-middleware": "^2.18.0"
+  },
+  "peerDependencies": {
+    "@phenomic/core": "^1.0.0-beta.3"
+  },
+  "devDependencies": {
+    "@phenomic/core": "^1.0.0-beta.3"
+  }
+}

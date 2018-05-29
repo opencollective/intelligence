@@ -1,0 +1,86 @@
+{
+  "name": "ferment",
+  "version": "0.6.19",
+  "description": "Peer-to-peer audio publishing and streaming application. Like SoundCloud but decentralized. A mashup of ssb, webtorrent and electron.",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard",
+    "start": "electron index.js",
+    "server": "electron server/index.js",
+    "postinstall": "npm run rebuild",
+    "rebuild": "npm rebuild --runtime=electron --target=1.4.3 --abi=50 --disturl=https://atom.io/download/atom-shell"
+  },
+  "bin": {
+    "ferment": "scripts/start.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmckegg/ferment.git"
+  },
+  "keywords": [
+    "audio",
+    "share",
+    "feed",
+    "stream",
+    "torrent",
+    "soundcloud",
+    "mixcloud",
+    "webtorrent",
+    "ssb",
+    "electron"
+  ],
+  "author": "Matt McKegg",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/mmckegg/ferment/issues"
+  },
+  "homepage": "https://github.com/mmckegg/ferment#readme",
+  "dependencies": {
+    "@mmckegg/mutant": "~3.7.2",
+    "atomic-file": "^0.1.0",
+    "bittorrent-tracker": "^8.0.12",
+    "broadcast-stream": "^0.1.1",
+    "color-hash": "^1.0.3",
+    "compare-version": "^0.1.2",
+    "create-torrent": "~3.25.1",
+    "data-uri-to-buffer": "0.0.4",
+    "electron": "~1.4.2",
+    "electron-default-menu": "^1.0.0",
+    "graphmitter": "^1.6.3",
+    "has-network": "0.0.0",
+    "human-time": "0.0.1",
+    "insert-css": "^1.0.0",
+    "level-memview": "0.0.0",
+    "mdmanifest": "^1.0.8",
+    "micro-css": "^0.6.1",
+    "mime-types": "^2.1.12",
+    "on-change-network": "0.0.2",
+    "on-wakeup": "^1.0.1",
+    "prettier-bytes": "^1.0.3",
+    "pull-file": "^1.0.0",
+    "pull-identify-filetype": "^1.1.0",
+    "pull-notify": "^0.1.1",
+    "pull-ping": "^2.0.2",
+    "pull-pushable": "^2.0.1",
+    "pull-stream": "^3.4.5",
+    "rimraf": "^2.5.4",
+    "sanitize-filename": "^1.6.1",
+    "scuttlebot": "~9.1.1",
+    "sodium-prebuilt": "~1.0.22",
+    "ssb-blobs": "~0.1.7",
+    "ssb-client": "~4.3.0",
+    "ssb-config": "~2.1.1",
+    "ssb-markdown": "^3.0.0",
+    "ssb-msg-schemas": "^6.2.1",
+    "ssb-msgs": "^5.2.0",
+    "ssb-ref": "^2.6.1",
+    "statistics": "^3.3.0",
+    "stream-to-pull-stream": "^1.7.2",
+    "webtorrent": "~0.97.2",
+    "xtend": "^4.0.1"
+  },
+  "devDependencies": {
+    "node-gyp": ">=1.0.2",
+    "standard": "^8.3.0"
+  }
+}

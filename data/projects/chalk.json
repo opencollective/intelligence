@@ -1,0 +1,11 @@
+{
+  "name": "chalk",
+  "packages": [
+    {
+      "name": "chalk",
+      "dependencies": 30,
+      "devDependencies": 24,
+      "score": 54
+    }
+  ]
+}

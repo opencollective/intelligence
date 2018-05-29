@@ -1,0 +1,13 @@
+{
+  "name": "gulp-concat",
+  "slug": "gulp-concat",
+  "ignored": true,
+  "packages": [
+    {
+      "name": "gulp-concat",
+      "devDependencies": 18,
+      "dependencies": 3,
+      "score": 27
+    }
+  ]
+}

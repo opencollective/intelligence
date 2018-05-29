@@ -1,0 +1,18 @@
+{
+  "name": "html-webpack-plugin",
+  "slug": "html-webpack-plugin",
+  "packages": [
+    {
+      "name": "html-webpack-plugin",
+      "devDependencies": 17,
+      "dependencies": 3,
+      "score": 26
+    }
+  ],
+  "opencollective": {
+    "id": 14082,
+    "name": "html-webpack-plugin",
+    "slug": "html-webpack-plugin"
+  },
+  "score": 26
+}

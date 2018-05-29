@@ -1,0 +1,12 @@
+{
+  "name": "coveralls",
+  "slug": "coveralls",
+  "packages": [
+    {
+      "name": "coveralls",
+      "dependencies": 1,
+      "devDependencies": 31,
+      "score": 34
+    }
+  ]
+}

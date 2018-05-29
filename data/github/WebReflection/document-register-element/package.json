@@ -1,0 +1,50 @@
+{
+  "version": "1.8.1",
+  "license": "ISC",
+  "name": "document-register-element",
+  "description": "A stand-alone working lightweight version of the W3C Custom Elements specification",
+  "homepage": "https://github.com/WebReflection/document-register-element",
+  "keywords": [
+    "Web",
+    "Components",
+    "Custom",
+    "Element",
+    "Elements",
+    "DOM",
+    "W3C",
+    "Polymer",
+    "polyfill",
+    "alternative"
+  ],
+  "author": {
+    "name": "Andrea Giammarchi",
+    "web": "http://webreflection.blogspot.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/WebReflection/document-register-element.git"
+  },
+  "main": "./build/document-register-element.node.js",
+  "browser": "./build/document-register-element.js",
+  "scripts": {
+    "test": "phantomjs testrunner.js",
+    "web": "tiny-cdn run -p=1337",
+    "postinstall": "lightercollective"
+  },
+  "devDependencies": {
+    "html-class": "^1.2.0",
+    "jshint": "^2.9.5",
+    "phantomjs-prebuilt": "^2.1.14",
+    "tiny-cdn": "^0.7.0",
+    "uglify-js": "^2.8.29",
+    "wru": "^0.3.0"
+  },
+  "dependencies": {
+    "lightercollective": "^0.0.0"
+  },
+  "collective": {
+    "type": "opencollective",
+    "url": "https://opencollective.com/document-register-element",
+    "logo": "https://opencollective.com/document-register-element/logo.txt"
+  }
+}

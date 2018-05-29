@@ -1,0 +1,25 @@
+{
+  "name": "redux",
+  "packages": [
+    {
+      "name": "redux",
+      "dependencies": 21,
+      "devDependencies": 8,
+      "peerDependencies": 1,
+      "score": 30
+    },
+    {
+      "name": "react-redux",
+      "dependencies": 19,
+      "devDependencies": 6,
+      "peerDependencies": 1,
+      "score": 26
+    },
+    {
+      "name": "redux-thunk",
+      "dependencies": 13,
+      "devDependencies": 2,
+      "score": 15
+    }
+  ]
+}

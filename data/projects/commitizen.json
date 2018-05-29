@@ -1,0 +1,11 @@
+{
+  "name": "commitizen",
+  "packages": [
+    {
+      "name": "cz-conventional-changelog",
+      "devDependencies": 12,
+      "dependencies": 1,
+      "score": 13
+    }
+  ]
+}

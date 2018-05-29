@@ -1,0 +1,11 @@
+{
+  "name": "rxjs",
+  "packages": [
+    {
+      "name": "rxjs",
+      "dependencies": 9,
+      "devDependencies": 5,
+      "score": 14
+    }
+  ]
+}

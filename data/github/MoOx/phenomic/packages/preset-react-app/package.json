@@ -1,0 +1,45 @@
+{
+  "name": "@phenomic/preset-react-app",
+  "version": "1.0.0-beta.3",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": "https://github.com/phenomic/phenomic.git",
+  "homepage": "https://phenomic.io",
+  "license": "MIT",
+  "authors": ["Maxime Thirouin (MoOx)", "bloodyowl <bloodyowl@icloud.com>"],
+  "keywords": [
+    "static",
+    "website",
+    "generator",
+    "compiler",
+    "phenomic",
+    "phenomic-plugin",
+    "phenomic-preset",
+    "react",
+    "webpack",
+    "markdown",
+    "json"
+  ],
+  "description": "Phenomic React app preset",
+  "main": "lib/index.js",
+  "files": ["lib", "src", "!**/__tests__", "bsconfig.json"],
+  "dependencies": {
+    "@phenomic/plugin-api-related-content": "^1.0.0-beta.3",
+    "@phenomic/plugin-bundler-webpack": "^1.0.0-beta.3",
+    "@phenomic/plugin-collector-files": "^1.0.0-beta.3",
+    "@phenomic/plugin-public-assets": "^1.0.0-beta.3",
+    "@phenomic/plugin-renderer-react": "^1.0.0-beta.3",
+    "@phenomic/plugin-transform-json": "^1.0.0-beta.3",
+    "@phenomic/plugin-transform-markdown": "^1.0.0-beta.3"
+  },
+  "devDependencies": {
+    "bs-platform": "^2.2.0"
+  },
+  "scripts": {
+    "reason:cleanup": "bsb -clean-world",
+    "reason:compile": "bsb -make-world",
+    "prepare": "yarn reason:cleanup && yarn reason:compile",
+    "dev": "yarn reason:compile -- -w"
+  }
+}

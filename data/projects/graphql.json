@@ -1,0 +1,12 @@
+{
+  "name": "graphql",
+  "packages": [
+    {
+      "name": "graphql",
+      "devDependencies": 2,
+      "dependencies": 7,
+      "peerDependencies": 1,
+      "score": 10
+    }
+  ]
+}

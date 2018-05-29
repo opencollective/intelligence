@@ -1,0 +1,112 @@
+{
+  "name": "webpack",
+  "packages": [
+    {
+      "name": "webpack",
+      "devDependencies": 81,
+      "dependencies": 7,
+      "peerDependencies": 1,
+      "score": 89
+    },
+    {
+      "name": "css-loader",
+      "devDependencies": 42,
+      "dependencies": 6,
+      "score": 48
+    },
+    {
+      "name": "style-loader",
+      "devDependencies": 38,
+      "dependencies": 3,
+      "score": 41
+    },
+    {
+      "name": "file-loader",
+      "devDependencies": 32,
+      "dependencies": 3,
+      "score": 35
+    },
+    {
+      "name": "webpack-dev-server",
+      "devDependencies": 33,
+      "dependencies": 1,
+      "score": 34
+    },
+    {
+      "name": "url-loader",
+      "devDependencies": 27,
+      "dependencies": 2,
+      "score": 29
+    },
+    {
+      "name": "extract-text-webpack-plugin",
+      "devDependencies": 24,
+      "dependencies": 3,
+      "score": 27
+    },
+    {
+      "name": "sass-loader",
+      "devDependencies": 20,
+      "dependencies": 4,
+      "score": 24
+    },
+    {
+      "name": "json-loader",
+      "devDependencies": 20,
+      "dependencies": 1,
+      "score": 21
+    },
+    {
+      "name": "copy-webpack-plugin",
+      "devDependencies": 19,
+      "dependencies": 1,
+      "score": 20
+    },
+    {
+      "name": "eslint-loader",
+      "devDependencies": 20,
+      "score": 20
+    },
+    {
+      "name": "karma-webpack",
+      "devDependencies": 19,
+      "score": 19
+    },
+    {
+      "name": "webpack-cli",
+      "devDependencies": 15,
+      "dependencies": 3,
+      "score": 18
+    },
+    {
+      "name": "webpack-hot-middleware",
+      "devDependencies": 15,
+      "dependencies": 1,
+      "score": 16
+    },
+    {
+      "name": "webpack-bundle-analyzer",
+      "devDependencies": 12,
+      "dependencies": 1,
+      "score": 13
+    },
+    {
+      "name": "webpack-dev-middleware",
+      "devDependencies": 11,
+      "dependencies": 1,
+      "score": 12
+    },
+    {
+      "name": "uglifyjs-webpack-plugin",
+      "devDependencies": 10,
+      "dependencies": 2,
+      "score": 12
+    }
+  ],
+  "opencollective": {
+    "id": 302,
+    "name": "webpack",
+    "slug": "webpack"
+  },
+  "score": 478
+}

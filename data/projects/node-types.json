@@ -1,0 +1,12 @@
+{
+  "name": "node-types",
+  "slug": "node-types",
+  "packages": [
+    {
+      "name": "@types/node",
+      "devDependencies": 29,
+      "dependencies": 4,
+      "score": 41
+    }
+  ]
+}

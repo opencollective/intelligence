@@ -1,0 +1,12 @@
+{
+  "name": "node-sass",
+  "slug": "node-sass",
+  "packages": [
+    {
+      "name": "node-sass",
+      "devDependencies": 30,
+      "dependencies": 7,
+      "score": 51
+    }
+  ]
+}

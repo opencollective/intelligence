@@ -1,0 +1,13 @@
+{
+  "name": "babel-plugin-add-module-exports",
+  "slug": "babel-plugin-add-module-exports",
+  "ignored": true,
+  "packages": [
+    {
+      "name": "babel-plugin-add-module-exports",
+      "devDependencies": 17,
+      "dependencies": 2,
+      "score": 23
+    }
+  ]
+}

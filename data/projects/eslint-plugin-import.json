@@ -1,0 +1,11 @@
+{
+  "name": "eslint-plugin-import",
+  "slug": "eslint-plugin-import",
+  "packages": [
+    {
+      "name": "eslint-plugin-import",
+      "devDependencies": 75,
+      "score": 75
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "eslint-plugin-jsx-a11y",
+  "slug": "eslint-plugin-jsx-a11y",
+  "packages": [
+    {
+      "name": "eslint-plugin-jsx-a11y",
+      "devDependencies": 40,
+      "score": 40
+    }
+  ]
+}

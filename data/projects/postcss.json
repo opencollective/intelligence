@@ -1,0 +1,23 @@
+{
+  "name": "postcss",
+  "packages": [
+    {
+      "name": "autoprefixer",
+      "devDependencies": 26,
+      "dependencies": 3,
+      "score": 29
+    },
+    {
+      "name": "postcss-loader",
+      "devDependencies": 20,
+      "dependencies": 2,
+      "score": 22
+    },
+    {
+      "name": "postcss",
+      "dependencies": 7,
+      "devDependencies": 4,
+      "score": 11
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "name": "express",
+  "packages": [
+    {
+      "name": "express",
+      "dependencies": 36,
+      "devDependencies": 19,
+      "score": 55
+    },
+    {
+      "name": "body-parser",
+      "dependencies": 25,
+      "devDependencies": 3,
+      "score": 28
+    },
+    {
+      "name": "cookie-parser",
+      "dependencies": 14,
+      "devDependencies": 1,
+      "score": 15
+    },
+    {
+      "name": "multer",
+      "dependencies": 11,
+      "devDependencies": 1,
+      "score": 12
+    },
+    {
+      "name": "express-session",
+      "dependencies": 11,
+      "devDependencies": 1,
+      "score": 12
+    },
+    {
+      "name": "morgan",
+      "dependencies": 9,
+      "devDependencies": 1,
+      "score": 10
+    },
+    {
+      "name": "compression",
+      "dependencies": 14,
+      "devDependencies": 1,
+      "score": 43
+    },
+    {
+      "name": "cors",
+      "dependencies": 8,
+      "score": 24
+    },
+    {
+      "name": "serve-favicon",
+      "dependencies": 5,
+      "devDependencies": 3,
+      "score": 18
+    }
+  ]
+}

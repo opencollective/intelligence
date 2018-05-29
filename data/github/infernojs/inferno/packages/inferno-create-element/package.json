@@ -1,0 +1,45 @@
+{
+  "name": "inferno-create-element",
+  "version": "5.0.6",
+  "license": "MIT",
+  "description": "Provides methods to create Inferno VNodes",
+  "author": {
+    "name": "Dominic Gannaway",
+    "email": "dg@domgan.com"
+  },
+  "bugs": {
+    "url": "https://github.com/infernojs/inferno/issues"
+  },
+  "homepage": "https://github.com/infernojs/inferno#readme",
+  "main": "index.js",
+  "module": "dist/index.esm.js",
+  "dev:module": "dist/index.dev.esm.js",
+  "typings": "dist/index.d.ts",
+  "keywords": [
+    "babel",
+    "react",
+    "inferno",
+    "framework",
+    "interfaces",
+    "user interfaces",
+    "vdom"
+  ],
+  "peerDependencies": {
+    "inferno": "^5"
+  },
+  "devDependencies": {
+    "inferno": "5.0.6",
+    "inferno-shared": "5.0.6",
+    "inferno-vnode-flags": "5.0.6"
+  },
+  "rollup": {
+    "bundledDependencies": [
+      "inferno-shared",
+      "inferno-vnode-flags"
+    ],
+    "moduleName": "Inferno",
+    "moduleGlobals": {
+      "inferno": "Inferno"
+    }
+  }
+}
