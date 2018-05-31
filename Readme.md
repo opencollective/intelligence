@@ -3,10 +3,7 @@ Intelligence Experiments
 
 ## Install
 
-```
-npm install
-
-```
+`npm install`
 
 ## Update Data
 
@@ -16,10 +13,10 @@ Optional
 2. `node register-projects`
 3. `node map-projects-collective`
 
-## Recommandations
+## Recommendations
 
-`node collective-recommandations {collective-slug}`
+`node collective-recommendations {collective-slug}`
 
 eg:
 
-`node collective-recommandations airbnb`
+`node collective-recommendations airbnb`

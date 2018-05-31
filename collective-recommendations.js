@@ -50,7 +50,7 @@ const getCollectiveQuery = `
 
 const slug = process.argv[2];
 if (!slug) {
-  throw new Error('You need to pass a slug, such as "node collective-recommandations airbnb"');
+  throw new Error('You need to pass a slug, such as "node collective-recommendations airbnb"');
 }
 
 const params = { slug: slug };
@@ -67,7 +67,7 @@ const getProjectFromDependency = async dependency =>
 request('https://opencollective.com/api/graphql', getCollectiveQuery, params)
   .then(data => {
 
-    console.log('Here are the recommandations for', data.Collective.name);
+    console.log('Here are the recommendations for', data.Collective.name);
 
     const backing = data.Collective.memberOf.filter(r => r.role === 'BACKER');
 
@@ -125,7 +125,7 @@ request('https://opencollective.com/api/graphql', getCollectiveQuery, params)
           }
         }
 
-      const recommandations = Object.values(rawStats)
+      const recommendations = Object.values(rawStats)
           .map(entry => {
             entry.score = 0;
             for (const dependencyType of dependencyTypes) {
@@ -141,14 +141,14 @@ request('https://opencollective.com/api/graphql', getCollectiveQuery, params)
           })
           .sort((a, b) =>  b.score - a.score)
 
-        const openCollectiveRecommandations = recommandations
+        const openCollectiveRecommendations = recommendations
           .filter(r => !!r.project.opencollective)
           .filter(r => collectiveIds.indexOf(r.project.opencollective.id) === -1);
 
-        if (openCollectiveRecommandations.length) {
+        if (openCollectiveRecommendations.length) {
           console.log('');
           console.log('You should consider backing these Open Collective projects:');
-          openCollectiveRecommandations.slice(0, 3).forEach(({ project, score, collectives }) => {
+          openCollectiveRecommendations.slice(0, 3).forEach(({ project, score, collectives }) => {
             console.log(' *', {
               name: project.name,
               url: `https://opencollective.com/${project.slug || project.name}`,
@@ -158,15 +158,15 @@ request('https://opencollective.com/api/graphql', getCollectiveQuery, params)
           });
         }
 
-        const otherRecommandations = recommandations
+        const otherRecommendations = recommendations
           .filter(r => !r.project.slug || r.project.slug[0] !== '_')
           .filter(r => !r.project.name || r.project.name[0] !== '_')
           .filter(r => !r.project.opencollective);
 
-        if (otherRecommandations.length) {
+        if (otherRecommendations.length) {
           console.log('');
           console.log('You should consider pledging to these Open Source projects:');
-          otherRecommandations.slice(0, 3).forEach(({ project, score, collectives }) => {
+          otherRecommendations.slice(0, 3).forEach(({ project, score, collectives }) => {
             console.log(' *', {
               name: project.name,
               score: score,
