@@ -1,9 +1,16 @@
 Intelligence Experiments
 ------------------------
 
+A project to run analytics experiments on OpenCollective data, to help
+the company and users make better decisions on the platform.
+
 ## Install
 
-`npm install`
+```
+npm install
+# Copy and configure with your own GitHub token and DB credentials
+cp sample.env .env
+```
 
 ## Update Data
 
@@ -15,7 +22,13 @@ Optional
 
 ## Recommendations
 
+Make recommendations for which collectives an organization on
+OpenCollective.com should support.
+
 `node collective-recommendations {collective-slug}`
+
+**Note:** `collective-slug' data is fetched from production website, not
+the database configured in this repo.
 
 eg:
 
