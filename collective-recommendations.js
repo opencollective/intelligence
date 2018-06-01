@@ -6,6 +6,8 @@ const { getCollectives, getProjects } = require('./lib/db');
 
 const { getLocalPackageJson } = require('./lib/github');
 
+const { scoreAndSortRawStats } = require('./lib/utils');
+
 const dependencyTypes = ['dependencies', 'peerDependencies', 'devDependencies'];
 
 const getCollectiveQuery = `
@@ -125,21 +127,7 @@ request('https://opencollective.com/api/graphql', getCollectiveQuery, params)
           }
         }
 
-      const recommendations = Object.values(rawStats)
-          .map(entry => {
-            entry.score = 0;
-            for (const dependencyType of dependencyTypes) {
-              if (entry[dependencyType]) {
-                if (dependencyType === 'dependencies') {
-                   entry.score += entry[dependencyType] * 3;
-                 } else {
-                   entry.score += entry[dependencyType];
-                 }
-              }
-            }
-            return entry;
-          })
-          .sort((a, b) =>  b.score - a.score)
+        const recommendations = scoreAndSortRawStats(rawStats);
 
         const openCollectiveRecommendations = recommendations
           .filter(r => !!r.project.opencollective)

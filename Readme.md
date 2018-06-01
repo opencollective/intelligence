@@ -20,12 +20,12 @@ Optional
 2. `node register-projects`
 3. `node map-projects-collective`
 
-## Recommendations
+## Open Collective Recommendations
 
 Make recommendations for which collectives an organization on
 OpenCollective.com should support.
 
-`node collective-recommendations {collective-slug}`
+`node collective-recommendations {openCollective-slug}`
 
 **Note:** `collective-slug' data is fetched from production website, not
 the database configured in this repo.
@@ -33,3 +33,11 @@ the database configured in this repo.
 eg:
 
 `node collective-recommendations airbnb`
+
+## Github Organization Recommendations
+
+`node github-organization-recommendations {githubOrganization-slug}`
+
+eg:
+
+`node github-organization-recommendations square`
