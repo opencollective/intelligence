@@ -13,10 +13,18 @@ Optional
 2. `node register-projects`
 3. `node map-projects-collective`
 
-## Recommendations
+## Open Collective Recommendations
 
-`node collective-recommendations {collective-slug}`
+`node collective-recommendations {openCollective-slug}`
 
 eg:
 
 `node collective-recommendations airbnb`
+
+## Github Organization Recommendations
+
+`node github-organization-recommendations {githubOrganization-slug}`
+
+eg:
+
+`node github-organization-recommendations square`

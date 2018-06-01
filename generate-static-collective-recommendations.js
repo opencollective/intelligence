@@ -17,19 +17,11 @@ getCollectives.then(async collectives => {
     const packageJsonPromises = [];
     if (collective.githubRepo) {
       if (collective['package.json']) {
-        packageJsonPromises.push(new Promise((resolve) => {
-          getLocalPackageJson(collective.githubRepo)
-            .then(packageJson => resolve(packageJson))
-            .catch(() => resolve())
-        }));
+        packageJsonPromises.push(getLocalPackageJson(collective.githubRepo));
       }
       if (collective.lernaPackages) {
         collective.lernaPackages.forEach(lernaPackage => {
-          packageJsonPromises.push(new Promise((resolve) => {
-            getLocalPackageJson(`${collective.githubRepo}/${lernaPackage}`)
-              .then(packageJson => resolve(packageJson))
-              .catch(() => resolve())
-          }))
+          packageJsonPromises.push(getLocalPackageJson(`${collective.githubRepo}/${lernaPackage}`))
         })
       }
     }
