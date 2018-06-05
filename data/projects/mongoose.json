@@ -11,6 +11,7 @@
   "opencollective": {
     "id": 11885,
     "name": "Mongoose.js",
-    "slug": "mongoose"
+    "slug": "mongoose",
+    "description": "The leading ODM for Node.js and MongoDB"
   }
 }

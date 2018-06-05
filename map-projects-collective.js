@@ -1,7 +1,7 @@
 const { getProjects, saveProject, getCollectives, getCollectivePackages } = require('./lib/db');
 
 const collectivesWithPackages =
-  getCollectives
+  getCollectives()
     .then(collectives =>
       Promise
         .all(
@@ -47,9 +47,9 @@ getProjects()
         await matchPackageWithCollective(projectPackage.name)
           .then(collective => {
             if (collective) {
-              const { id, name, slug } = collective;
-              console.log('  -> match:', { id, slug });
-              project.opencollective = { id, name, slug };
+              const { id, name, slug, description } = collective;
+              console.log('  -> match:', { id, name, slug, description });
+              project.opencollective = { id, name, slug, description };
               return saveProject(project);
             }
           })

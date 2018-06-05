@@ -11,7 +11,8 @@
   "opencollective": {
     "id": 58,
     "name": "MochaJS",
-    "slug": "mochajs"
+    "slug": "mochajs",
+    "description": "simple, flexible, fun javascript test framework for node.js & the browser."
   },
   "score": 84
 }

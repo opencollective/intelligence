@@ -16,6 +16,7 @@
   "opencollective": {
     "id": 16401,
     "name": "Jest",
-    "slug": "jest"
+    "slug": "jest",
+    "description": "Delightful JavaScript Testing"
   }
 }

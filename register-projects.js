@@ -18,7 +18,7 @@ const getPackageProject = packageName => allProjects.then(projects =>
   )
 )
 
-getCollectives.then(async collectives => {
+getCollectives().then(async collectives => {
 
   for (const collective of Object.values(collectives)) {
 

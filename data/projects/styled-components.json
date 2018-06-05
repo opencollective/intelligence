@@ -12,7 +12,8 @@
   "opencollective": {
     "id": 12353,
     "name": "styled-components",
-    "slug": "styled-components"
+    "slug": "styled-components",
+    "description": "Visual primitives for the component age. Use the best bits of ES6 and CSS to style your apps without stress 💅"
   },
   "score": 13
 }

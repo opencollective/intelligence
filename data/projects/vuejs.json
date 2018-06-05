@@ -36,7 +36,8 @@
   "opencollective": {
     "id": 903,
     "name": "vue",
-    "slug": "vuejs"
+    "slug": "vuejs",
+    "description": null
   },
   "score": 82
 }

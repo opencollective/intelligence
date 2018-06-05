@@ -11,7 +11,8 @@
   "opencollective": {
     "id": 659,
     "name": "socket.io",
-    "slug": "socketio"
+    "slug": "socketio",
+    "description": null
   },
   "score": 13
 }

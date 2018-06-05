@@ -106,7 +106,8 @@
   "opencollective": {
     "id": 302,
     "name": "webpack",
-    "slug": "webpack"
+    "slug": "webpack",
+    "description": "webpack is THE build solution for modern web applications."
   },
   "score": 478
 }

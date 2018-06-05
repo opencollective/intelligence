@@ -10,6 +10,7 @@
   "opencollective": {
     "id": 12010,
     "name": "Nodemailer",
-    "slug": "nodemailer"
+    "slug": "nodemailer",
+    "description": "Module for Node.js applications to allow easy as cake email sending"
   }
 }

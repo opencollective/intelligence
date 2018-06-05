@@ -12,13 +12,14 @@ npm install
 cp sample.env .env
 ```
 
-## Update Data
+## Download and prepare data
 
-Optional
+This is optional, data is already commited in the repository.
 
 1. `node download-data` (need DB credentials and Github Token)
-2. `node register-projects`
-3. `node map-projects-collective`
+2. `node add-collective-top-sponsors`
+3. `node register-projects`
+4. `node map-projects-collective`
 
 ## Open Collective Recommendations
 

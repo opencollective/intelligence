@@ -10,6 +10,7 @@
   "opencollective": {
     "id": 180,
     "name": "AVA",
-    "slug": "ava"
+    "slug": "ava",
+    "description": null
   }
 }

@@ -16,7 +16,8 @@
   "opencollective": {
     "id": 13486,
     "name": "electron",
-    "slug": "electron"
+    "slug": "electron",
+    "description": "Build cross platform desktop apps with JavaScript, HTML, and CSS"
   },
   "score": 40
 }

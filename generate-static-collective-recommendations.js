@@ -8,7 +8,7 @@ const { getLocalPackageJson } = require('./lib/github');
 
 const { getRawStatsWithProjectFromPackageJsonArray, scoreAndSortRawStats } = require('./lib/utils');
 
-getCollectives.then(async collectives => {
+getCollectives().then(async collectives => {
 
   const entries = {};
 

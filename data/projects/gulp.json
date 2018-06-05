@@ -17,6 +17,7 @@
   "opencollective": {
     "id": 85,
     "name": "GulpJS",
-    "slug": "gulpjs"
+    "slug": "gulpjs",
+    "description": "The streaming build system."
   }
 }

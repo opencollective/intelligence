@@ -40,6 +40,7 @@
   "opencollective": {
     "id": 11743,
     "name": "Rollup",
-    "slug": "rollup"
+    "slug": "rollup",
+    "description": "The JavaScript module bundler"
   }
 }

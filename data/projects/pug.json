@@ -11,7 +11,8 @@
   "opencollective": {
     "id": 454,
     "name": "pug",
-    "slug": "pug"
+    "slug": "pug",
+    "description": "A powerful templating engine for node.js and the browser"
   },
   "score": 12
 }

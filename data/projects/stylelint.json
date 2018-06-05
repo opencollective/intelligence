@@ -15,7 +15,8 @@
   "opencollective": {
     "id": 755,
     "name": "stylelint",
-    "slug": "stylelint"
+    "slug": "stylelint",
+    "description": "A mighty, modern CSS linter"
   },
   "score": 33
 }

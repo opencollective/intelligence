@@ -85,7 +85,7 @@ request('https://opencollective.com/api/graphql', getCollectiveQuery, params)
 
     const collectiveIds = backing.map(r => r.collective.id);
 
-    getCollectives.then(
+    getCollectives().then(
       cs => Object.values(cs).filter(c => collectiveIds.indexOf(c.id) !== -1)
     ).then(collectives =>
       collectives.map(c => pick(c, 'id', 'name', 'slug', 'githubRepo', 'package.json'))

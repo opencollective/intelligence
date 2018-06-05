@@ -131,6 +131,7 @@
   "opencollective": {
     "id": 580,
     "name": "Babel",
-    "slug": "babel"
+    "slug": "babel",
+    "description": "Babel is a compiler for writing next generation JavaScript"
   }
 }

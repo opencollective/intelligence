@@ -12,7 +12,8 @@
   "opencollective": {
     "id": 14082,
     "name": "html-webpack-plugin",
-    "slug": "html-webpack-plugin"
+    "slug": "html-webpack-plugin",
+    "description": null
   },
   "score": 26
 }

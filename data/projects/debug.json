@@ -12,7 +12,8 @@
   "opencollective": {
     "id": 498,
     "name": "debug",
-    "slug": "debug"
+    "slug": "debug",
+    "description": null
   },
   "score": 57
 }

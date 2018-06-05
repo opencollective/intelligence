@@ -13,11 +13,14 @@ async function checkCollectives(collectives, db) {
 
   for (const collective of collectives) {
 
-    const { id, slug, name } = collective;
+    const { id, slug, name, description } = collective;
 
-    console.log('Processing', { id, slug });
+    console.log('Processing', { id, slug, name, description });
 
-    const dbEntry = db[id] = db[id] || { id, slug, name };
+    const dbEntry = db[id] = db[id] || { id, slug, name, description };
+
+    // dbEntry['name'] = name;
+    // dbEntry['description'] = description;
 
     if (collective.settings && collective.settings.githubRepo) {
       dbEntry['githubRepo'] = collective.settings.githubRepo;
@@ -44,7 +47,7 @@ async function checkCollectives(collectives, db) {
     // Warning and Breaking
     if (!dbEntry['githubRepo']) {
       console.warn(' -> no githubRepo for collective', dbEntry);
-      break;
+      continue;
     }
 
     dbEntry['githubRepo'] = dbEntry['githubRepo'].replace('https://github.com/', '');
@@ -78,16 +81,18 @@ async function checkCollectives(collectives, db) {
       }
     }
 
-    saveCollectives(db);
+    // console.log('Saving', { dbEntry });
+
+    await saveCollectives(db);
   }
 
 }
 
 async function main() {
-  getCollectives.then(db => {
-    query.then(collectives => {
+  getCollectives().then(db => {
+    query.then(async collectives => {
       sequelize.close();
-      checkCollectives(collectives, db);
+      await checkCollectives(collectives, db);
     })
   })
 }
