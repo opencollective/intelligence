@@ -12,7 +12,6 @@ const { getCollective } = require('./lib/db');
 const { formatCurrency } = require('./lib/utils');
 
 const parsedArgs = require('minimist')(process.argv.slice(2));
-console.dir(parsedArgs);
 const force = false;
 
 const orgsReposDataDir = path.join(__dirname, 'data', 'orgs', 'repos');
