@@ -9,7 +9,10 @@ const github = require('./lib/github');
 const { getRawStatsWithProjectFromPackageJsonArray, scoreAndSortRawStats, jsonEncode } = require('./lib/utils');
 
 const { getCollective } = require('./lib/db');
+const { formatCurrency } = require('./lib/utils');
 
+const parsedArgs = require('minimist')(process.argv.slice(2));
+console.dir(parsedArgs);
 const force = false;
 
 const orgsReposDataDir = path.join(__dirname, 'data', 'orgs', 'repos');
@@ -40,7 +43,7 @@ const outputCollective = (collective, repos)  => {
       chalk`  {grey ${collective.description}}`
     )
   }
-  if (repos) {
+  if (!parsedArgs.compact && repos) {
     console.log('  Used in:');
     for (const repo of repos) {
       console.log(
@@ -50,21 +53,21 @@ const outputCollective = (collective, repos)  => {
   }
   if (collective.sponsors) {
     console.log('  Top Sponsors:');
-    for (const sponsor of collective.sponsors.slice(0, 5)) {
+    for (const sponsor of collective.sponsors.slice(0, (parsedArgs.sponsors || 3))) {
       console.log(
-        chalk`    - {cyan ${sponsor.name}} gave {yellow ${Math.round(sponsor.totalDonations / 100)}$} so far {grey https://opencollective.com/${sponsor.slug || sponsor.name}#backer}`
+        chalk`    - {cyan ${sponsor.name}} gave {yellow ${formatCurrency(sponsor.totalDonations)}} so far {grey https://opencollective.com/${sponsor.slug || sponsor.name}}`
       );
     }
   }
   console.log('');
 }
 
-const githubOrg = process.argv[2];
+const githubOrg = parsedArgs._[0];
 if (!githubOrg) {
   throw new Error('You need to pass a githubOrg, such as "node organization-recommendations square"');
 }
 
-const type = process.argv[3] || 'opencollective';
+const type = parsedArgs._[1] || 'opencollective';
 
 getOrgRepos(githubOrg)
   .then(async repos => {
