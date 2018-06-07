@@ -9,6 +9,7 @@
     "graphql-request": "^1.6.0",
     "inquirer": "^5.2.0",
     "lodash": "^4.17.10",
+    "minimist": "^1.2.0",
     "mkdirp-promise": "^5.0.1",
     "node-fetch": "^2.1.2",
     "pg": "^7.4.3",
